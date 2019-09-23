@@ -1,7 +1,7 @@
 import React from 'react';
 
 const About=()=>(
-    <div>
+    <div className="context">
         <h2>/About us/ will be here ASAP</h2>
     </div>
 )

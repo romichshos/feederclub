@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../logo.svg';
-import '../App.css';
+import './App.css';
 import Header from './Header/Header';
 import Menu from './NavBar/Menu';
 import { BrowserRouter as Router,  } from 'react-router-dom';
@@ -9,17 +9,19 @@ import Contacts from "./Contacts/Contacts";
 import MainPage from "./MainPage/MainPage";
 import About from "./About/About";
 import MyGallery from "./Galery/Galery";
+
 const App =()=>(
    <Router>
-    <div className="app-wrapper">
-      <Header/>
-      <Menu/>
-    </div>
+    <div className="container">
+      <Header />
+      <Menu />
+
     <div>
-        <Route path='/MainPage/MainPage' component={MainPage}/>
-        <Route path='/Contacts/Contacts' component={Contacts}/>
-        <Route path='/MyGallery/MyGallery' component={MyGallery}/>
-        <Route path='/About/About' component={About}/>
+        <Route exact path='/' component={MainPage}/>
+        <Route path='/Contacts' component={Contacts}/>
+        <Route path='/MyGallery' component={MyGallery}/>
+        <Route path='/About' component={About}/>
+    </div>
     </div>
    </Router>
     )
