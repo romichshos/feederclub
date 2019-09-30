@@ -1,12 +1,13 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 
 const Menu =()=>(
     <div className="menu">
         <nav className="nav">
-          <a href="/" className="nav-item">Главная</a> |
-          <a href="/Contacts" className="nav-item">Контакты</a> |
-          <a href="/MyGallery" className="nav-item">Галерея</a> |
-          <a href="/About" className="nav-item">О нас</a>
+          <NavLink to="/" className="nav-item">Главная</NavLink> |
+          <NavLink to="/Contacts" className="nav-item">Контакты</NavLink> |
+          <NavLink to="/MyGallery" className="nav-item">Галерея</NavLink> |
+          <NavLink to="/About" className="nav-item">О нас</NavLink>
         </nav>
     </div>
 )

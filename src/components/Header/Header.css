@@ -1,0 +1,17 @@
+@import url("/src/fonts.css");
+
+.header{
+    display: grid;
+    max-width: 4000px;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 3fr 8fr;
+    grid-template-rows: 200px;
+}
+.header-title{
+    font-family:Aksent, Arial, sans-serif;
+}
+
+.header-logo{
+
+}

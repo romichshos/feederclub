@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Aksent';
+    src: url("./fonts/Aksent.woff"), url("./fonts/Aksent.woff2") ;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pgr';
+    src: url("./fonts/PGR.woff"), url("./fonts/PGR.woff2") ;
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'simpler';
+    src: url("./fonts/SIMPLER.woff"), url("./fonts/SIMPLER.woff2") ;
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tauern';
+    src: url("./fonts/TauernCTTRegular.woff"), url("./fonts/TauernCTTRegular.woff2") ;
+    font-weight: normal;
+    font-style: normal;
+}
