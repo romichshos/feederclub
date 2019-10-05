@@ -1,5 +1,5 @@
 import React from 'react';
-import Menu from '../NavBar/Menu';
+import Menu from '../NavBar/Navbar';
 import PropTypes from 'prop-types';
 import './Header.css';
 
@@ -8,7 +8,8 @@ const Header = () => (
         <div className="header_wrap wrap">
             <div className="header_top">
                 <div className="header_logo logo">
-                    <a className="logo_link" href="/fc_logo.svg">
+                    <a className="logo_link" href='#'>
+                      <img className='logo_img' src='http://localhost:3000/fc_logo.png' alt='Логотип'/>
                     </a>
                 </div>
                 <div className="header_title">
@@ -18,6 +19,14 @@ const Header = () => (
                 </div>
                 <Menu/>
             </div>
+            <div className="header_info">
+                <h1 className="main_title">
+                 Рыбачь, учись, соревнуйся
+                </h1>
+            </div>
+            <a className="btn_arrow" href='#'>
+                <img className='arrow_img' src='http://localhost:3000/arrow_down_5.png' alt='Перейти ниже'/>
+            </a>
         </div>
     </header>
 )

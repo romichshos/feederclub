@@ -1,13 +1,42 @@
 @import url(../../fonts.css);
 
 .header {
-    font-family: Aksent, Arial, sans-serif;
     background: url(../../img/main_bgr.jpg) center top no-repeat #fff;
     background-size: cover;
 }
 
 .header-top {
     display: grid;
-    grid-template-columns: 270px 1fr;
+    grid-template-columns: 128px 540px 1fr;
     grid-column-gap: 20px;
+    padding-top: 40px;
+}
+
+.header_title {
+    font-family: aksent, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.header_info {
+
+}
+
+.main_title {
+    font-family: tauern, Arial, sans-serif;
+    font-size: 75px;
+
+}
+
+.arrow_img {
+    max-width: 128px;
+}
+
+.logo_link {
+    display: block;
+    max-width: 25%;
+}
+
+.logo_img {
+    display: block;
+    max-width: 25%;
 }

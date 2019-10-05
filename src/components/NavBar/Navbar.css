@@ -1,0 +1,12 @@
+@import url(../../fonts.css);
+
+.header_menu{
+    font-family: simpler, Arial, sans-serif;
+    font-size: 11px;
+    color: #0a1947;
+}
+
+/*
+.menu_item{
+    font-family: simpler, Arial, sans-serif;
+}*/
