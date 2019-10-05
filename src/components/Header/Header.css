@@ -14,7 +14,8 @@
 
 .header_title {
     font-family: aksent, Arial, sans-serif;
-    font-size: 12px;
+    font-size: 17px;
+    color: #0a1947;
 }
 
 .header_info {
@@ -23,8 +24,8 @@
 
 .main_title {
     font-family: tauern, Arial, sans-serif;
-    font-size: 75px;
-
+    font-size: 90px;
+    color: #323537;
 }
 
 .arrow_img {

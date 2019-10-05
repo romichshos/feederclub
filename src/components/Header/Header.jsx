@@ -24,7 +24,7 @@ const Header = () => (
                  Рыбачь, учись, соревнуйся
                 </h1>
             </div>
-            <a className="btn_arrow" href='#'>
+            <a className="btn_arrow" href='#content'>
                 <img className='arrow_img' src='http://localhost:3000/arrow_down_5.png' alt='Перейти ниже'/>
             </a>
         </div>
