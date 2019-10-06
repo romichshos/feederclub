@@ -5,6 +5,10 @@
     background-size: cover;
 }
 
+.header_wpap{
+    padding-bottom: 65px;
+}
+
 .header-top {
     display: grid;
     grid-template-columns: 128px 540px 1fr;
@@ -16,16 +20,24 @@
     font-family: aksent, Arial, sans-serif;
     font-size: 17px;
     color: #0a1947;
+    letter-spacing: 2px;
+}
+
+.capital_letter{
+    color: #535554;
 }
 
 .header_info {
-
+    margin-top:15%;
+    margin-bottom: 15%;
 }
 
 .main_title {
     font-family: tauern, Arial, sans-serif;
-    font-size: 90px;
-    color: #323537;
+    font-size: 125px;
+    color: #0d2861;
+    text-align: center;
+    letter-spacing: 20px;
 }
 
 .arrow_img {
@@ -42,6 +54,38 @@
     max-width: 25%;
 }
 
+.header_text{
+    text-align: center;
+}
+
+.header_link{
+    font-size: 35px;
+    line-height: 75px;
+    color: #19bebe;
+    font-family: pgr, Arial, sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 12px;
+    transition-duration: 500ms;
+    transition-property: letter-spacing;
+}
+
+.header_link:hover{
+    letter-spacing: 15px;
+}
+
+.btn_arrow{
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 100px;
+    cursor: pointer;
+}
+
+
+/* BTN ANIMATION*/
 .btn_down{
     color: #0ae7f0;
     background: #0c002b;
