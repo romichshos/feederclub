@@ -9,11 +9,11 @@
     padding-bottom: 65px;
 }
 
-.header-top {
-    display: grid;
-    grid-template-columns: 128px 540px 1fr;
+.header_top {
+    grid-template-columns: 128px /*540px*/ 1fr;
     grid-column-gap: 20px;
     padding-top: 40px;
+    display: grid;
 }
 
 .header_title {
@@ -21,6 +21,7 @@
     font-size: 17px;
     color: #0a1947;
     letter-spacing: 2px;
+    align-items: center;
 }
 
 .capital_letter{
