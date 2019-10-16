@@ -5,23 +5,24 @@
     background-size: cover;
 }
 
-.header_wpap{
+.header_wrap{
     padding-bottom: 65px;
 }
 
 .header_top {
-    grid-template-columns: 128px /*540px*/ 1fr;
-    grid-column-gap: 20px;
-    padding-top: 40px;
     display: grid;
+    grid-template-columns: 100px 170px 1fr;
+    grid-column-gap: 20px;
+    padding-top: 30px;
 }
 
 .header_title {
     font-family: aksent, Arial, sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     color: #0a1947;
     letter-spacing: 2px;
     align-items: center;
+    max-width: 100%;
 }
 
 .capital_letter{
@@ -45,14 +46,14 @@
     max-width: 128px;
 }
 
-.logo_link {
+.logo_link{
     display: block;
-    max-width: 25%;
+    max-width: 90%;
 }
 
 .logo_img {
     display: block;
-    max-width: 25%;
+    max-width: 90%;
 }
 
 .header_text{
