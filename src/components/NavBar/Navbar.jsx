@@ -12,7 +12,7 @@ const Menu =()=>(
             <NavLink to="/Contacts" className="menu_item">Контакты</NavLink>
           </div>
           <div>
-              <NavLink to="/MyGallery" className="menu_item">Галерея</NavLink>
+            <NavLink to="/MyGallery" className="menu_item">Галерея</NavLink>
           </div>
           <div>
             <NavLink to="/About" className="menu_item">О нас</NavLink>

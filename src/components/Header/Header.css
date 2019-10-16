@@ -11,16 +11,16 @@
 
 .header_top {
     display: grid;
-    grid-template-columns: 100px 170px 1fr;
+    grid-template-columns: 100px 250px 1fr;
     grid-column-gap: 20px;
     padding-top: 30px;
 }
 
 .header_title {
     font-family: aksent, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     color: #0a1947;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     align-items: center;
     max-width: 100%;
 }
@@ -63,7 +63,7 @@
 .header_link{
     font-size: 35px;
     line-height: 75px;
-    color: #19bebe;
+    color: #be6b0f;
     font-family: pgr, Arial, sans-serif;
     font-weight: 800;
     text-decoration: none;
@@ -71,6 +71,7 @@
     letter-spacing: 12px;
     transition-duration: 500ms;
     transition-property: letter-spacing;
+
 }
 
 .header_link:hover{
@@ -84,8 +85,12 @@
     width: 200px;
     height: 100px;
     cursor: pointer;
+    transition: 1s;
 }
 
+.btn_arrow:hover{
+    transform: scale(1.2);
+}
 
 /* BTN ANIMATION*/
 .btn_down{
