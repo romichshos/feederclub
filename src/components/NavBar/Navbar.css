@@ -26,7 +26,7 @@ nav.menu_list {
 }
 
 .menu_item:active {
-    color: #be680b;
+    color: #ffffff;
 }
 
 .menu_item:hover {
@@ -41,11 +41,12 @@ nav.menu_list {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #0ae7f0;
+    background: #9e9fa6;
     transition: transfrom 0.5s;
     transform-origin: right;
     transform: scaleX(0);
     z-index: -1;
+    border-radius: 5%;
 }
 
 .menu_item:hover:before {
@@ -72,7 +73,7 @@ nav.menu_list {
 
 .active_item {
     font-family: simpler, Arial, sans-serif;
-    color: #be680b;
+    color: #bebd20;
 }
 
 .active_item:hover {

@@ -9,7 +9,7 @@ const Header = () => (
             <div className="header_top">
                 <div className="header_logo logo">
                     <a className="logo_link" href='#'>
-                      <img className='logo_img' src='http://localhost:3000/fc_logo.png' alt='Логотип'/>
+                        <img className='logo_img' src='http://localhost:3000/fc_logo.png' alt='Логотип'/>
                     </a>
                 </div>
                 <div className="header_title">
@@ -21,16 +21,21 @@ const Header = () => (
             </div>
             <div className="header_info">
                 <h1 className="main_title">
-                 Рыбачь, учись, соревнуйся
+                    Рыбачь, учись, соревнуйся
                 </h1>
                 <p className="header_text">
-                  <a className="header_link" href="#">регистрация</a>
+                    <a className="header_link" href="#">регистрация</a>
                 </p>
+            </div>
+            <div className="logo_div">
+                <a className="logo_moving" href='#'>
+                    <img className='img_feed' src='http://localhost:3000/Logo_moving.png' alt='G'/>
+                </a>
             </div>
             <a className="btn_arrow" href='#content'>
                 <img className='arrow_img' src='http://localhost:3000/arrow_down_11.png' alt='Перейти ниже'/>
             </a>
-           {/* <a className="a_down" href='#content'>
+            {/* <a className="a_down" href='#content'>
                 <span></span>
                 <span></span>
                 <span></span>
