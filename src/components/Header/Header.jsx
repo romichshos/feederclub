@@ -33,7 +33,12 @@ const Header = () => (
                 </a>
             </div>
             <a className="btn_arrow" href='#content'>
-                <img className='arrow_img' src='http://localhost:3000/arrow_down_11.png' alt='Перейти ниже'/>
+                <div className="arrow-7">
+                    <span></span>
+                    <span></span>
+                   {/* <span></span>*/}
+                </div>
+                     {/* <img className='arrow_img' src='http://localhost:3000/icons-80.png' alt='Перейти ниже'/>*/}
             </a>
             {/* <a className="a_down" href='#content'>
                 <span></span>

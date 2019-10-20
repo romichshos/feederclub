@@ -25,6 +25,22 @@ nav.menu_list {
     display: block;
 }
 
+@media (max-width: 900px) {
+    .menu_item {
+        font-size: 7px;
+        letter-spacing: 3px;
+        line-height: 15px;
+        margin-left: 30px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .menu_list {
+        justify-content: center;
+    }
+}
+
 .menu_item:active {
     color: #ffffff;
 }
