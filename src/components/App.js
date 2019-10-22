@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header/Header.jsx';
-import RegForm from './RegForm/RegForm.jsx';
+import LogForm from './LogForm/LogForm.jsx';
 import { BrowserRouter as Router} from 'react-router-dom';
 
 const App =()=>(
@@ -9,7 +9,7 @@ const App =()=>(
       <Header/>
     </div>
     <div>
-        <RegForm/>
+        <LogForm/>
     </div>
    </Router>
     )
