@@ -36,17 +36,9 @@ const Header = () => (
                 <div className="arrow-7">
                     <span></span>
                     <span></span>
-                   {/* <span></span>*/}
+                    {/* <span></span>*/}
                 </div>
-                     {/* <img className='arrow_img' src='http://localhost:3000/icons-80.png' alt='Перейти ниже'/>*/}
             </a>
-            {/* <a className="a_down" href='#content'>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <button className="btn_down">Перейти ниже</button>
-            </a>*/}
         </div>
     </header>
 )

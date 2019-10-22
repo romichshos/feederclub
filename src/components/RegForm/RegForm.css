@@ -1,0 +1,106 @@
+.pass_container {
+    box-sizing: border-box;
+    margin: 100px;
+  /*  width: 100vw;
+    height: 100vh;*/
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 300;
+}
+
+.login_div {
+    width: 400px;
+    height: 700px;
+    padding: 60px 35px 35px 35px;
+    border-radius: 10px;
+    background: radial-gradient(circle, #555555, #535353, #505050, #4e4e4e, #4c4c4c);
+}
+
+.logo_form {
+    background-image: url('http://localhost:3000/fc_logo_100.png');
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    font-size: 28px;
+    padding-top: 24px;
+    letter-spacing: 0.5px;
+}
+
+.sub_title {
+    text-align: center;
+    font-size: 15px;
+    padding-top: 7px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.fields {
+    width: 100%;
+    padding: 100px 5px 30px 5px;
+}
+
+.fields input {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    color: white;
+    padding: 10px 10px 10px 5px;
+}
+
+.username, .password {
+    display: block;
+    border-bottom: 1px solid #b3b3b3;
+    margin-bottom: 30px;
+}
+
+::placeholder{
+    color:white;
+    opacity:1;
+    font-size:20px;
+    font-weight: 300;
+}
+
+.signin_button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 22px;
+    color:white;
+    text-align: center;
+    letter-spacing: 1px;
+    background: radial-gradient(circle,#24cfaa,#26c5a3,#28bb9c,#29b294,#2aa88c);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.signin_button:hover{
+    background: radial-gradient(circle,#2fdbb6,#32d6b3,#32c9a8,#36c7a7,#38bb9f);
+}
+
+.signin_button:active{
+    background: radial-gradient(circle,#1da88a,#1ea084,#229c82,#23947b,#238d76);
+}
+
+.link{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.link a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+}
