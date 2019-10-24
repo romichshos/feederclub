@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header/Header.jsx';
+import About from './About/About.jsx';
 import LogForm from './LogForm/LogForm.jsx';
 import { BrowserRouter as Router} from 'react-router-dom';
 
@@ -8,9 +9,10 @@ const App =()=>(
     <div className="container">
       <Header/>
     </div>
-    <div>
+    <About/>
+   {/* <div>
         <LogForm isRegisterForm={true}/>
-    </div>
+    </div>*/}
    </Router>
     )
 

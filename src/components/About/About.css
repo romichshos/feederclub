@@ -1,0 +1,41 @@
+@import url(../../fonts.css);
+
+.content {
+    background: url(../../img/about_background.jpg) center top no-repeat #0c002b;
+    background-size: cover;
+    margin: 2px;
+}
+
+.content_wrap {
+    display: grid;
+    grid-template-columns: 4fr 4fr 2fr;
+    grid-template-rows: 250px 800px 250px;
+    grid-column-gap: 20px;
+}
+
+.context_about{
+  /*   border-top:  4px solid #bebd20;
+     border-bottom:  4px solid #bebd20;*/
+    z-index: -1;
+    filter: blur(3px);
+ }
+
+.context_text{
+    margin: 10px;
+    padding: 30px;
+    border-top:  4px solid #bebd20;
+    border-bottom:  4px solid #bebd20;
+    z-index: 10;
+ }
+
+.context_text:hover {
+    /*letter-spacing: 5px;*/
+}
+
+.span_text{
+    font-family: 'Monotype Corsiva', sans-serif;
+    font-size: 60px;
+    color:#bebd20;
+}
+
+

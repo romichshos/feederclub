@@ -36,7 +36,6 @@ const Header = () => (
                 <div className="arrow-7">
                     <span></span>
                     <span></span>
-                    {/* <span></span>*/}
                 </div>
             </a>
         </div>
