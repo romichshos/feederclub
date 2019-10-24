@@ -9,7 +9,7 @@ const App =()=>(
       <Header/>
     </div>
     <div>
-        <LogForm/>
+        <LogForm isRegisterForm={true}/>
     </div>
    </Router>
     )
