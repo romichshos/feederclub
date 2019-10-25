@@ -10,9 +10,9 @@ const App =()=>(
       <Header/>
     </div>
     <About/>
-   {/* <div>
-        <LogForm isRegisterForm={true}/>
-    </div>*/}
+  {/*  <div>
+       <LogForm isRegisterForm={false}/>
+   </div>*/}
    </Router>
     )
 
