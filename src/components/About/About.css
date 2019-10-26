@@ -1,9 +1,12 @@
 @import url(../../fonts.css);
 
-.content {
-    background: url(../../img/about_background.jpg) center top no-repeat #0c002b;
+.wrap_about{
+    background: url(../../img/about_background.jpg) center top no-repeat #fff;
     background-size: cover;
-    margin: 10px;
+    margin-top: 20px;
+}
+
+.content {
     display: flex;
     justify-content: center;
     align-items: center;

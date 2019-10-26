@@ -6,9 +6,6 @@ const Menu =()=>(
     <div className="header_menu">
         <nav className="menu_list">
           <div>
-            <NavLink to="/" className="menu_item">Главная</NavLink>
-          </div>
-          <div>
             <NavLink to="/Contacts" className="menu_item">Контакты</NavLink>
           </div>
           <div>
@@ -17,6 +14,12 @@ const Menu =()=>(
           <div>
             <NavLink to="/About" className="menu_item">О нас</NavLink>
           </div>
+            <div>
+                <NavLink to="/About" className="menu_item">Регистрация</NavLink>
+            </div>
+            <div>
+              <NavLink to="/" className="menu_item">Войти</NavLink>
+            </div>
         </nav>
     </div>
 )

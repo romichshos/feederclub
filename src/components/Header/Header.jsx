@@ -32,11 +32,11 @@ const Header = () => (
                     <img className='img_feed' src='http://localhost:3000/Logo_moving.png' alt='G'/>
                 </a>
             </div>
-            <div className="btn_arrow">
-                <div className="arrow-7">
-                    <span></span>
-                    <span></span>
-                </div>
+         </div>
+        <div className="btn_arrow">
+            <div className="arrow-7">
+                <span></span>
+                <span></span>
             </div>
         </div>
     </header>

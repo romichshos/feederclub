@@ -32,11 +32,16 @@ body {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }*/
-
+.btn_arrow{
+  position: relative;
+  margin: 0 auto;
+}
 
 /*ARROW */
 .arrow-7 {
   margin: 30px;
+  position: absolute;
+  bottom: 50px;
 }
 .arrow-7 span {
   display: block;

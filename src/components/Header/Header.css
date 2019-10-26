@@ -2,7 +2,7 @@
 @import url(../../index.css);
 
 .header {
-    background: url(../../img/main_bgr.jpg) center top no-repeat #0c002b;
+    background: url(../../img/main_bgr.jpg) center top no-repeat #fff;
     background-size: cover;
 }
 
@@ -78,9 +78,9 @@
 
 .logo_div {
     position: fixed;
-    bottom: 80px;
-    right: 40px;
-
+    top: 60%;
+    left: 80%;
+    z-index:1000;
 }
 
 .logo_link {
