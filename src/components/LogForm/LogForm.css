@@ -78,7 +78,7 @@
     padding: 10px 10px 10px 5px;
 }
 
-.username, .password, .email{
+.username, .password, .email    {
     display: block;
     border-bottom: 1px solid #b3b3b3;
     margin-bottom: 30px;

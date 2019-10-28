@@ -28,11 +28,11 @@ const Header = () => (
                 </p>
             </div>
             <div className="logo_div">
-                <a className="logo_moving" href='#'>
-                    <img className='img_feed' src='http://localhost:3000/Logo_moving.png' alt='G'/>
-                </a>
-            </div>
-         </div>
+                    <div className="logo_div_3">
+                        <img className='img_feed' src='http://localhost:3000/Logo_moving.png' alt='G'/>
+                    </div>
+           </div>
+        </div>
         <div className="btn_arrow">
             <div className="arrow-7">
                 <span></span>

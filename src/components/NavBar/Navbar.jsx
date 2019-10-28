@@ -21,7 +21,7 @@ const Menu =()=>(
               <NavLink to="/" className="menu_item">Войти</NavLink>
             </div>
         </nav>
-    </div>
+     </div>
 )
 
 export default Menu

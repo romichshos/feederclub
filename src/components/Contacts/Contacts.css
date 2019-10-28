@@ -41,24 +41,15 @@
     justify-content: space-between;
     flex-basis: 800px;
     margin: 35px;
-    /* border-bottom: 1px solid #0c002b;*/
+     border-bottom: 1px solid #0c002b;
+    border-top: 1px solid #0c002b;
 }
 
 .contacts_list div span {
     font-family: Euphemia, sans-serif;
     font-size: 20px;
     font-weight: normal;
-    border-bottom: 1px solid #0c002b;
-
-}
-
-.footer {
-    display: flex;
-    background: #0c002b;
-    border: 2px solid /*#24cfaa*/ #1012cf;
-    justify-content: space-between;
-    align-items: center;
-    font-family: Euphemia, sans-serif;
+    /*border-bottom: 1px solid #0c002b;*/
 
 }
 

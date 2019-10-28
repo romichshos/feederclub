@@ -1,5 +1,6 @@
 import React from 'react';
 import './Contacts.css';
+import Footer from '../Footer/Footer.jsx';
 
 const Contacts = () => (
     <div className="contacts_container">
@@ -17,9 +18,7 @@ const Contacts = () => (
             </div>
             <div></div>
         </div>
-        <div className="footer">
-          <div className="copy">&copy; FeederShostkaClub 2019</div>
-        </div>
+        <Footer/>
     </div>
 
 )

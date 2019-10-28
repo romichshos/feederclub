@@ -78,9 +78,28 @@
 
 .logo_div {
     position: fixed;
-    top: 60%;
+    top: 55%;
     left: 80%;
     z-index:1000;
+    width: 17%;
+    height: 17%;
+}
+
+/*.logo_div_2{
+    position:relative;
+}*/
+
+.logo_div_3{
+    position: relative;
+}
+
+.logo_div img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    max-width: 90%;
 }
 
 .logo_link {
