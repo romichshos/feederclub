@@ -2,7 +2,7 @@
 footer {
     /*display: flex;*/
     background: #0c002b;
-    border: 2px solid /*#24cfaa*/ #1012cf;
+    /*border: 2px solid !*#24cfaa*! #1012cf;*/
     /*justify-content: space-between;*/
     /*align-items: center;*/
     font-family: Euphemia, sans-serif;
@@ -64,3 +64,7 @@ footer {
     padding-right: 40px;
 }
 
+.svg-icon.svg_footer {
+    width: 2em;
+    height: 2em;
+}

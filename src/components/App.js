@@ -10,6 +10,7 @@ const App = () => (
         <div className="container">
             <Header/>
             <About/>
+            {/*<LogForm/>*/}
             <Contacts/>
         </div>
     </Router>

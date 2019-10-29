@@ -50,10 +50,48 @@
     font-size: 20px;
     font-weight: normal;
     /*border-bottom: 1px solid #0c002b;*/
-
 }
 
-.copy {
+.contacts_wrap{
+    width: 400px;
     color: #fff;
-    margin: 35px;
+    font-family: Micra, sans-serif;
+    font-size: 15px;
+}
+
+.contacts_wrap input{
+    width: 360px;
+    height: 40px;
+    font-size: 15px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-family: Micra, sans-serif;
+}
+
+.input_btn{
+    background-color: #9e9fa6;
+}
+
+.red{
+    color: #f1002b;
+}
+
+.form_input{
+    display: flex;
+    flex-direction: column;
+}
+
+textarea{
+    width: 360px;
+    height: 160px;
+    margin-top: 10px;
+}
+
+.contacts_wrap input, textarea{
+    border: 1px solid #0c002b;
+    border-radius: 5px;
+}
+
+.btn_block{
+    margin-top: 20px;
 }
