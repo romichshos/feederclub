@@ -18,7 +18,7 @@ const store = createStore(rootReducer, composeEnhancers())
 
 render(
     <Provider store={store}>
-        <App/>
+        <App isLogin={true} isRegisterForm={false}/>
     </Provider>, document.getElementById('root')
 );
 

@@ -1,8 +1,5 @@
 import { combineReducers } from 'redux'
-import {login,logout} from "../actions";
+import  loginForm from "./loginform";
 
 
-export default combineReducers({
-    login,
-    logout
-})
+export default combineReducers({loginForm})

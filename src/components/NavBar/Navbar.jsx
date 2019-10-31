@@ -15,7 +15,7 @@ const Menu =()=>(
             <NavLink to="/About" className="menu_item">О нас</NavLink>
           </div>
             <div>
-                <NavLink to="/About" className="menu_item">Регистрация</NavLink>
+                <NavLink to="/LogForm" className="menu_item">Регистрация</NavLink>
             </div>
             <div>
               <NavLink to="/" className="menu_item">Войти</NavLink>

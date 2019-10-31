@@ -2,7 +2,7 @@
 
 .pass_container {
     box-sizing: border-box;
-    /*margin: 100px;*/
+    margin-top: 20px;
     /*  width: 100vw;
       height: 100vh;*/
     overflow: hidden;
