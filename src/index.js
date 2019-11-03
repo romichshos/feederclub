@@ -14,11 +14,11 @@ const composeEnhancers = composeWithDevTools({
     trace: true,
     traceLimit: 25,
 })
-const store = createStore(rootReducer, composeEnhancers())
+const store = createStore(rootReducer, composeEnhancers());
 
 render(
     <Provider store={store}>
-        <App isLogin={true} isRegisterForm={false}/>
+        <App />
     </Provider>, document.getElementById('root')
 );
 

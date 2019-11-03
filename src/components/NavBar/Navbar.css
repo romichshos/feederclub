@@ -26,6 +26,15 @@
     display: block;
 }
 
+.menu_item.menu_item_login{
+    color:#ff0057;
+    text-decoration: none;
+    font-family: Euphemia;
+    letter-spacing: 3px;
+    font-size: 10px;
+
+}
+
 @media (max-width: 900px) {
     .menu_item {
         font-size: 7px;
@@ -98,3 +107,51 @@
     opacity: 1;
     filter: blur(0);
 }
+
+
+.div_login{
+    position: relative;
+    transition: 1s;
+}
+
+.div_login:hover .sub_menu{
+    transform: scaleY(1);
+}
+
+.sub_menu {
+    margin-top: 10px;
+    list-style-type: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    transition: 0.5s;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+}
+
+.sub_menu li{
+    padding: 10px;
+    min-height: 20px;
+    mim-width: 110px;
+    transition: 0.5s;
+}
+
+.sub_menu li a{
+    font-family: Euphemia, sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    color: #0c002b;
+}
+
+
+.sub_menu li:hover{
+    transform: translateX(10px);
+}
+
+
+
+.sub_menu li:hover  a{
+    color: #ff0057;
+}
+

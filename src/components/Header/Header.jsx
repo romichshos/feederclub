@@ -1,5 +1,5 @@
 import React from 'react';
-import Menu from '../NavBar/Navbar';
+import NavBarWithLogin from '../../containers/NavBarWithLogin';
 import PropTypes from 'prop-types';
 import './Header.css';
 
@@ -17,7 +17,7 @@ const Header = () => (
                     <h3><span className="capital_letter">Ф</span>идерный</h3>
                     <h3><span className="capital_letter">К</span>луб</h3>
                 </div>
-                <Menu/>
+                <NavBarWithLogin />
             </div>
             <div className="header_info">
                 <h1 className="main_title">

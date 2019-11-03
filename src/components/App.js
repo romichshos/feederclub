@@ -2,16 +2,17 @@ import React from 'react';
 import Header from './Header/Header.jsx';
 import About from './About/About.jsx';
 import Contacts from './Contacts/Contacts.jsx';
-import LogForm from '../components/LogForm/LogForm.jsx';
+import LogForm from '../containers/Login';
 import {BrowserRouter as Router} from 'react-router-dom';
 
 
-const App = (props) => (
+
+const App = () => (
     <Router>
         <div className="container">
             <Header/>
             <About/>
-            {(props.isLogin)?<LogForm/>:null}
+            <LogForm/>
             <Contacts/>
         </div>
     </Router>
