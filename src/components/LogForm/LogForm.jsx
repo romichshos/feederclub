@@ -2,7 +2,7 @@ import React from 'react';
 import './LogForm.css';
 import '../../svgicons.css';
 
-const LogForm = ({username, psw, email, isLogged, handleLogInClick}) => {
+const LogForm = ({username, psw, email, handleLogInClick}) => {
     let isRegisterForm=1;
     return (
         <div className="pass_container">
@@ -41,7 +41,7 @@ const LogForm = ({username, psw, email, isLogged, handleLogInClick}) => {
                     </div>
                 </div>
                 <button className="signin_button"
-                        onClick={(e)=>{e.preventDefault(); handleLogInClick(username, psw, email,isLogged=true)}}>{({isRegisterForm}) ? "РЕГИСТРАЦИЯ" : "ЛОГИН"}</button>
+                        onClick={(e)=>{e.preventDefault(); handleLogInClick(username, psw, email)}}>{({isRegisterForm}) ? "РЕГИСТРАЦИЯ" : "ЛОГИН"}</button>
                 <div className='link'><a href='#'>{({isRegisterForm}) ? "" : "Забыли пароль?"}</a></div>
                 </form>
             </div>

@@ -12,11 +12,11 @@ const mapStateToProps = (state) => ({
 
 
 const mapDispatchToProps = (dispatch) => ({
-        handleLogInClick(username, psw, email, isLogged) {
+        handleLogInClick(username, psw, email) {
             if (!username.value.trim() && !psw.value.trim() && !email.value.trim()) {
                 return
             }
-            dispatch(logIn(username, psw, email, isLogged));
+            dispatch(logIn(username, psw, email));
             username.value = '';
             psw.value = '';
             email.value = '';

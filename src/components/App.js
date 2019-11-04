@@ -7,15 +7,14 @@ import {BrowserRouter as Router} from 'react-router-dom';
 
 
 
+
 const App = () => (
-    <Router>
         <div className="container">
             <Header/>
             <About/>
             <LogForm/>
             <Contacts/>
         </div>
-    </Router>
 )
 
 export default App;

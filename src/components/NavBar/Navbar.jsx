@@ -1,35 +1,35 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
+import {Link, animateScroll as scroll} from 'react-scroll';
 import './Navbar.css';
 
 
 
-const Menu =({username})=>(
+const Menu =({username, onClickLogOut})=>(
     <div className="header_menu">
         <nav className="menu_list">
           <div>
-            <NavLink to="/Contacts" className="menu_item">Контакты</NavLink>
+            <Link to="Contacts" spy={true} smooth={true} offset={-70} duration={3000}  className="menu_item">Контакты</Link>
           </div>
           <div>
-            <NavLink to="/MyGallery" className="menu_item">Галерея</NavLink>
+            <Link to="/MyGallery" className="menu_item">Галерея</Link>
           </div>
           <div>
-            <NavLink to="/About" className="menu_item">О нас</NavLink>
+            <Link to="About" spy={true} smooth={true} offset={-70} duration={3000} className="menu_item">О нас</Link>
           </div>
           <div>
-                <NavLink to="/LogForm" className="menu_item">Регистрация</NavLink>
+                <Link to="/LogForm" className="menu_item">Регистрация</Link>
            </div>
           <div className={(username) ? "div_login": "div_div"}>
 
-                <NavLink to="/" className={(username) ? "menu_item menu_item_login": "menu_item"}>{(username)?
+                <Link to="/" className={(username) ? "menu_item menu_item_login": "menu_item"}>{(username)?
                       "Привет  "+username+" !"
                            : "Войти" }
-                </NavLink>
+                </Link>
 
                 <ul className="sub_menu">
                         <li><a href="#">Профиль</a></li>
                         <li><a href="#">Моя переписка</a></li>
-                        <li><a href="#">Выйти</a></li>
+                        <li><a href="#" onClick={onClickLogOut}>Выйти</a></li>
                 </ul>
 
            </div>

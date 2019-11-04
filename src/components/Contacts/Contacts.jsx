@@ -1,6 +1,7 @@
 import React from 'react';
 import './Contacts.css';
 import Footer from '../Footer/Footer.jsx';
+import {Element} from 'react-scroll';
 
 const Contacts = () => (
     <div className="contacts_container">
@@ -30,11 +31,10 @@ const Contacts = () => (
                 <div className="contacts_type">EMAIL: <span>feedershostkaclub@gmail.com</span></div>
                 <div className="contacts_type">АДРЕС: <span>г. Шостка Сумская область</span></div>
             </div>
-            <div></div>
+            <div>        <Element name ='Contacts'/></div>
         </div>
         <Footer/>
     </div>
-
 )
 
 export default Contacts

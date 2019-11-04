@@ -1,10 +1,13 @@
 import React from 'react';
 import NavBarWithLogin from '../../containers/NavBarWithLogin';
 import PropTypes from 'prop-types';
+import {Element} from 'react-scroll';
 import './Header.css';
+import {scroller} from "react-scroll/modules/index";
 
 const Header = () => (
     <header className="header">
+        <Element name ='Header'/>
         <div className="header_wrap wrap">
             <div className="header_top">
                 <div className="header_logo logo">
@@ -34,7 +37,7 @@ const Header = () => (
            </div>
         </div>
         <div className="btn_arrow">
-            <div className="arrow-7">
+            <div className="arrow-7" onClick={()=>scroller.scrollTo('About',{spy:true, smooth:true, offset:-70, duration:3000})}>
                 <span></span>
                 <span></span>
             </div>

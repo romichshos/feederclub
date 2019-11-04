@@ -1,10 +1,13 @@
 import React from 'react';
 import './About.css';
+import {Element, scroller} from 'react-scroll';
+
 
 const About = () => (
     <div className="wrap_about">
         <div className="content">
             <div className="container_card">
+                <Element name ='About'/>
                 <div className="card">
                     <div className="face face1">
                         <div className="content_card">
@@ -56,7 +59,7 @@ const About = () => (
             </div>
         </div>
         <div className="btn_arrow">
-            <div className="arrow-7">
+            <div className="arrow-7" onClick={()=>scroller.scrollTo('Contacts',{spy:true, smooth:true, offset:-70, duration:3000})}>
                 <span></span>
                 <span></span>
             </div>

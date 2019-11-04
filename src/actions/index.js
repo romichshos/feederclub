@@ -1,25 +1,29 @@
 let nextId =0;
 
-export const logIn = (username, psw, email, isLogged=true, isRegisterForm=false) => ({
+export const logIn = (username, psw, email, isRegisterForm=false) => ({
     type: 'LOGIN',
     userId: 1,
     username: username.value,
     psw: psw.value,
     email: email.value,
-    isLogin: isLogged,
+    isLogged: true,
     isRegisterForm: isRegisterForm
 })
 
-export const logOut =(userId, email, login) =>({
+export const logOut =() =>({
     type: 'LOGOUT',
-    id: userId,
-    email: email,
-    login: login
+    userId: null,
+    username: null,
+    psw: null,
+    email: null,
+    isLogged: false
 })
 
-export const register =(userId, email, login, psw) =>({
+export const register =(username, psw, email) =>({
     type: 'REGISTER',
+    userId: 1,
+    username: username,
     psw: psw,
     email: email,
-    login: login
+    isLogged: false
 })

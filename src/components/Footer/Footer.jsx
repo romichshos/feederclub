@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
+import {Link, animateScroll as scroll} from 'react-scroll';
 import './Footer.css';
 
 
@@ -11,19 +11,19 @@ const Footer = () => (
                     <li className="footer_li">&copy; FeederShostkaClub 2019</li>
                 </div>
                 <div>
-                    <NavLink to="/Header" className="menu_item footer_item">Главная</NavLink>
+                    <Link to="Header" spy={true} smooth={true} offset={-70} duration={3000} className="menu_item footer_item">Главная</Link>
                 </div>
                 <div>
-                    <NavLink to="/MyGallery" className="menu_item footer_item">Галерея</NavLink>
+                    <Link to="MyGallery"spy={true} smooth={true} offset={-70} duration={3000} className="menu_item footer_item">Галерея</Link>
                 </div>
                 <div>
-                    <NavLink to="/About" className="menu_item footer_item">О нас</NavLink>
+                    <Link to="About" spy={true} smooth={true} offset={-70} duration={3000} className="menu_item footer_item">О нас</Link>
                 </div>
                 <div>
-                    <NavLink to="/About" className="menu_item footer_item">Регистрация</NavLink>
+                    <Link to="LogForm" spy={true} smooth={true} offset={-70} duration={3000} className="menu_item footer_item">Регистрация</Link>
                 </div>
                 <div>
-                    <NavLink to="/" className="menu_item footer_item"> </NavLink>
+                    <Link to="/" className="menu_item footer_item"> </Link>
                 </div>
             </nav>
             <ul className="footer_socials socials">
