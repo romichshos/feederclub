@@ -1,16 +1,18 @@
 import React from 'react';
 import './LogForm.css';
 import '../../svgicons.css';
+import {Element} from 'react-scroll';
 
-const LogForm = ({username, psw, email, handleLogInClick}) => {
-    let isRegisterForm=1;
+const LogForm = ({username, psw, email, isRegisterForm, handleLogInClick}) => {
+    /*let isRegisterForm=1;*/
     return (
         <div className="pass_container">
+            <Element name='LogForm'/>
             <div className="login_div">
                 <div className="logo_form"></div>
                 <div className="title">ШФК</div>
                 <form>
-                <div className="sub_title">{({isRegisterForm}) ? "зарегистрируйся" : "авторизация"}</div>
+                <div className="sub_title">{(isRegisterForm) ? "зарегистрируйся" : "авторизация"}</div>
                 <div className="fields">
                     {(isRegisterForm) ?
                         <div className="email">
@@ -41,8 +43,8 @@ const LogForm = ({username, psw, email, handleLogInClick}) => {
                     </div>
                 </div>
                 <button className="signin_button"
-                        onClick={(e)=>{e.preventDefault(); handleLogInClick(username, psw, email)}}>{({isRegisterForm}) ? "РЕГИСТРАЦИЯ" : "ЛОГИН"}</button>
-                <div className='link'><a href='#'>{({isRegisterForm}) ? "" : "Забыли пароль?"}</a></div>
+                        onClick={(e)=>{e.preventDefault(); handleLogInClick(username, psw, email)}}>{(isRegisterForm) ? "РЕГИСТРАЦИЯ" : "ЛОГИН"}</button>
+                <div className='link'><a href='#'>{(isRegisterForm) ? "" : "Забыли пароль?"}</a></div>
                 </form>
             </div>
         </div>

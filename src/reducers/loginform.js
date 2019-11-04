@@ -15,7 +15,18 @@ const loginForm = (state = {}, action) => {
                 username:  action.username,
                 email:  action.email,
                 psw: action.psw,
-                isLogged: action.isLogged
+                isLogged: action.isLogged,
+                isRegisterForm: action.isRegisterForm
+            }
+        case 'LOGIN_FORM_CALL':
+        return {
+            ...state,
+            isRegisterForm: action.isRegisterForm
+        }
+        case 'REGISTER_FORM_CALL':
+            return {
+                ...state,
+                isRegisterForm: action.isRegisterForm
             }
         default:
             return state

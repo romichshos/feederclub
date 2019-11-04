@@ -57,7 +57,7 @@
 
 .menu_item:hover {
      transform: scale(1.5);
-
+     cursor: pointer;
  }
 
 .menu_item:before {

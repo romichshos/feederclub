@@ -7,7 +7,8 @@ const mapStateToProps = (state) => ({
     username: state.username,
     psw: state.psw,
     email: state.email,
-    isLogged: state.isLogged
+    isLogged: state.isLogged,
+    isRegisterForm: state.loginForm.isRegisterForm
 })
 
 

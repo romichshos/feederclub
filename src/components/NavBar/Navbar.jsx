@@ -1,27 +1,27 @@
 import React from 'react';
-import {Link, animateScroll as scroll} from 'react-scroll';
+import {Link} from 'react-scroll';
 import './Navbar.css';
 
 
 
-const Menu =({username, onClickLogOut})=>(
+const Menu =({username, onClickLogOut, onClickLogIn, onClickRegister})=>(
     <div className="header_menu">
         <nav className="menu_list">
           <div>
-            <Link to="Contacts" spy={true} smooth={true} offset={-70} duration={3000}  className="menu_item">Контакты</Link>
+            <Link to="Contacts" spy={true} smooth={true} offset={-70} duration={2500}  className="menu_item">Контакты</Link>
           </div>
           <div>
             <Link to="/MyGallery" className="menu_item">Галерея</Link>
           </div>
           <div>
-            <Link to="About" spy={true} smooth={true} offset={-70} duration={3000} className="menu_item">О нас</Link>
+            <Link to="About" spy={true} smooth={true} offset={-70} duration={2500} className="menu_item">О нас</Link>
           </div>
           <div>
-                <Link to="/LogForm" className="menu_item">Регистрация</Link>
+             <Link to="LogForm" spy={true} smooth={true} offset={-400} duration={2500} className="menu_item" onClick={onClickRegister}>Регистрация</Link>
            </div>
           <div className={(username) ? "div_login": "div_div"}>
 
-                <Link to="/" className={(username) ? "menu_item menu_item_login": "menu_item"}>{(username)?
+                <Link to="LogForm" spy={true} smooth={true} offset={-400} duration={2500} className={(username) ? "menu_item menu_item_login": "menu_item"} onClick={onClickLogIn}>{(username)?
                       "Привет  "+username+" !"
                            : "Войти" }
                 </Link>
