@@ -1,13 +1,13 @@
 let nextId =0;
 
-export const logIn = (username, psw, email, isRegisterForm) => ({
+export const logIn = (username, psw, email, isRegisterForm=false) => ({
     type: 'LOGIN',
     userId: 1,
     username: username.value,
     psw: psw.value,
     email: email.value,
     isLogged: true,
-    isRegisterForm: isRegisterForm
+    isRegisterForm: isRegisterForm.value
 })
 
 export const logOut =() =>({

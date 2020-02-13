@@ -43,7 +43,7 @@ const LogForm = ({username, psw, email, isRegisterForm, handleLogInClick}) => {
                     </div>
                 </div>
                 <button className="signin_button"
-                        onClick={(e)=>{e.preventDefault(); handleLogInClick(username, psw, email)}}>{(isRegisterForm) ? "РЕГИСТРАЦИЯ" : "ЛОГИН"}</button>
+                        onClick={(e)=>{e.preventDefault(); handleLogInClick(username, psw, email={})}}>{(isRegisterForm) ? "РЕГИСТРАЦИЯ" : "ЛОГИН"}</button>
                 <div className='link'><a href='#'>{(isRegisterForm) ? "" : "Забыли пароль?"}</a></div>
                 </form>
             </div>

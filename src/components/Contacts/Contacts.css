@@ -70,6 +70,7 @@
 
 .input_btn{
     background-color: #9e9fa6;
+    max-width: 100%;
 }
 
 .red{
@@ -95,4 +96,15 @@ textarea{
 
 .btn_block{
     margin-top: 20px;
+    }
+
+@media (max-width: 700px){
+    .contacts_wrap input{
+        width: calc(360px/2);
+        height: calc(40px/2);
+        font-size: calc(15px/2);
+        margin-bottom: 30px;
+        margin-top: 10px;
+        font-family: Micra, sans-serif;
+    }
 }
