@@ -12,7 +12,7 @@ const Header = () => (
             <div className="header_top">
                 <div className="header_logo logo">
                     <a className="logo_link" href='#'>
-                        <img className='logo_img' src='http://localhost:3000/fc_logo.png' alt='Логотип'/>
+                        <img className='logo_img' src='/fc_logo.png' alt='Логотип'/>
                     </a>
                 </div>
                 <div className="header_title">
@@ -32,7 +32,7 @@ const Header = () => (
             </div>
             <div className="logo_div">
                     <div className="logo_div_3">
-                        <img className='img_feed' src='http://localhost:3000/Logo_moving.png' alt='G'/>
+                        <img className='img_feed' src='/Logo_moving.png' alt=''/>
                     </div>
            </div>
         </div>

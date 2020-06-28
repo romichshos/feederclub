@@ -11,7 +11,7 @@ const About = () => (
                 <div className="card">
                     <div className="face face1">
                         <div className="content_card">
-                            <img src="http://localhost:3000/fish.png"/>
+                            <img src="/fish.png"/>
                             <h3>Рыбачь</h3>
                         </div>
                     </div>
@@ -27,7 +27,7 @@ const About = () => (
                 <div className="card">
                     <div className="face face1">
                         <div className="content_card">
-                            <img src="http://localhost:3000/computer.png"/>
+                            <img src="/computer.png"/>
                             <h3>Учись</h3>
                         </div>
                     </div>
@@ -43,7 +43,7 @@ const About = () => (
                 <div className="card">
                     <div className="face face1">
                         <div className="content_card">
-                            <img src="http://localhost:3000/cup.png"/>
+                            <img src="/cup.png"/>
                             <h3>Соревнуйся</h3>
                         </div>
                     </div>

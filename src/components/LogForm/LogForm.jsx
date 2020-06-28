@@ -9,7 +9,7 @@ const LogForm = ({username, psw, email, isRegisterForm, handleLogInClick}) => {
         <div className="pass_container">
             <Element name='LogForm'/>
             <div className="login_div">
-                <div className="logo_form"><img className="logo_img_1" src="http://localhost:3000/fishing-2.png" alt=""/></div>
+                <div className="logo_form"><img className="logo_img_1" src="/fishing-2.png" alt=""/></div>
                 <div className="title">ШФК</div>
                 <form>
                 <div className="sub_title">{(isRegisterForm) ? "зарегистрируйся" : "авторизация"}</div>
