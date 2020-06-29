@@ -28,7 +28,7 @@ const Contacts = () => (
         </div>
         <div className="contacts_content">
             <div className="contacts_list">
-                <div className="contacts_type">EMAIL: <span>feedershostkaclub@gmail.com</span></div>
+                <div className="contacts_type">EMAIL: <span>feederclub@feedershostka.com.ua</span></div>
                 <div className="contacts_type">АДРЕС: <span>г. Шостка Сумская область</span></div>
             </div>
             <div>        <Element name ='Contacts'/></div>
