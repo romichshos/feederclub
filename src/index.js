@@ -1,4 +1,5 @@
 import React from 'react';
+//import 'react-devtools';
 import {render} from 'react-dom';
 import './index.css';
 import App from './components/App';
