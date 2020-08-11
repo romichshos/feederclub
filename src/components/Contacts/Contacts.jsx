@@ -7,18 +7,23 @@ import {useForm} from 'react-hook-form';
 
 
 const Contacts = () => {
-    const {register, handleSubmit, errors, reset } = useForm(/*{defaultValues: {
-             name: "имя",
-            email: "email",
-             text: "ведите текст"}
-    }*/
+    const {register, handleSubmit, errors, reset } = useForm({defaultValues: {
+             name: "testuser",
+            email: "rkostik@ukr.net",
+             text: "I'm test"}
+    }
 );
     const onSubmit = (data, e) => {console.log(data);
+    //console.log(e);
         reset({});
     };
 
-    useEffect(async () => {
-        const result = await fetch('./api/formValues.json'); // result: { firstName: 'test', lastName: 'test2' }
+  useEffect(async () => {
+        const result = await fetch('send/', {
+            method: 'POST',
+            body:'text',
+            url:'localhost:3002'
+        }); // result: { firstName: 'test', lastName: 'test2' }
         reset(result); // asynchronously reset your form values
     }, [reset])
  return   (
@@ -29,7 +34,7 @@ const Contacts = () => {
                     <div className="contacts_text">НАПИШИТЕ НАМ</div>
                 </div>
                 <div className="contacts_wrap">
-                    <form action="#" name="callback_form" method="post" onSubmit={handleSubmit(onSubmit)}>
+                    <form name="callback_form" method="post" onSubmit={handleSubmit(onSubmit)}>
                         <div className="form_input">
                             <p><span className="span_header">Имя <span className="red">*</span></span>
                                 <input ref={register({ required: true })} name="name" type="text"/></p>

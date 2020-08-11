@@ -6,13 +6,16 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const cfg = require('./config/config.js');
 const crudHandler =require('./config/server/routes/routes');
+const app = express();
 //const creds = require('../../config/config.js');
 
 
 ///// EMAIL ////////////////////////
 const transport = {
-    host: 'mx1.mirohost.net', // Don’t forget to replace with the SMTP host of your provider
-    port: 143,
+    host: 'smtp.office365.com', // Don’t forget to replace with the SMTP host of your provider
+    port: 587,
+    secure:false,
+    tls: {rejectUnauthorized: false},
     auth: {
         user: cfg.creds.USER,
         pass: cfg.creds.PASS
@@ -30,24 +33,27 @@ transporter.verify((error, success) => {
 });
 
 router.post('/send', (req, res, next) => {
+    console.log(req);
     var name = req.body.name
     var email = req.body.email
-    var message = req.body.message
+    var message = req.body.text
     var content = `name: ${name} \n email: ${email} \n message: ${message} `
 
     var mail = {
         from: name,
-        to: 'feederclub@feedershostka.com.ua',  // Change to email address that you want to receive messages on
+        to: 'romichsh@outlook.com',  // Change to email address that you want to receive messages on
         subject: 'New Message from Contact Form',
         text: content
     }
 
     transporter.sendMail(mail, (err, data) => {
         if (err) {
+            console.log(err);
             res.json({
                 status: 'fail'
             })
         } else {
+            console.log('Message sent!');
             res.json({
                 status: 'success'
             })
@@ -55,7 +61,12 @@ router.post('/send', (req, res, next) => {
     })
 })
 
-const app = express()
+router.get('/send', function(req, res) {
+    console.log(req.body);
+});
+
+
+
 app.use(cors())
 app.use(express.json())
 app.use('/', router)
