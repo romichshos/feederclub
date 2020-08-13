@@ -1,7 +1,9 @@
 
 exports.cfg = {
             dbConnect:  'mongodb://localhost:27017/mongoose_auth',
-            serverPort: 8000
+            serverPort: 8000,
+            serverPortMailer: 3002
+
 }
 
 exports.creds ={

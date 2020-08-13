@@ -33,14 +33,14 @@ transporter.verify((error, success) => {
 });
 
 router.post('/send', (req, res, next) => {
-    console.log(req);
+    console.log(req.body);
     var name = req.body.name
     var email = req.body.email
     var message = req.body.text
     var content = `name: ${name} \n email: ${email} \n message: ${message} `
 
     var mail = {
-        from: name,
+        from: email,
         to: 'romichsh@outlook.com',  // Change to email address that you want to receive messages on
         subject: 'New Message from Contact Form',
         text: content
@@ -70,7 +70,13 @@ router.get('/send', function(req, res) {
 app.use(cors())
 app.use(express.json())
 app.use('/', router)
-app.listen(3002)
+const server = app.listen(3002, function () {
+
+    var host = server.address().address
+    var port = server.address().port
+    console.log("Example app listening at http://%s:%s", host, port)
+
+})
 
 ///////////////////////////////////////////////
 
@@ -93,7 +99,7 @@ app.listen(3002)
 
 
 
-/*crudHandler.createUser('Romich', '080808', 'romich@gmail.com');*/
+/*crudHandler.createUser('Romich', '', 'romich@gmail.com');*/
 
 /*app.use(express.static(path.join(__dirname, 'build')));
 

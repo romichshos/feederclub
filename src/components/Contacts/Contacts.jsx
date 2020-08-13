@@ -8,22 +8,23 @@ import {useForm} from 'react-hook-form';
 
 const Contacts = () => {
     const {register, handleSubmit, errors, reset } = useForm({defaultValues: {
-             name: "testuser",
+             name: "test-user",
             email: "rkostik@ukr.net",
              text: "I'm test"}
     }
 );
     const onSubmit = (data, e) => {console.log(data);
-    //console.log(e);
         reset({});
     };
 
-  useEffect(async () => {
-        const result = await fetch('send/', {
+  useEffect(async (data) => {
+         const result = await fetch('http://localhost:3002/send', {
             method: 'POST',
-            body:'text',
-            url:'localhost:3002'
-        }); // result: { firstName: 'test', lastName: 'test2' }
+            body:JSON.stringify(data),
+            headers: {
+                'Content-Type' : 'application/json'
+            }
+        });
         reset(result); // asynchronously reset your form values
     }, [reset])
  return   (
