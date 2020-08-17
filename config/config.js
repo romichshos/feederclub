@@ -9,5 +9,5 @@ exports.cfg = {
 
 exports.creds ={
     USER: 'romichsh@outlook.com',
-    PASS: '080808Outlook'
+    PASS: process.env.EMAILPASS
 }

@@ -70,7 +70,7 @@ router.get('/send', function(req, res) {
 app.use(cors())
 app.use(express.json())
 app.use('/', router)
-const server = app.listen(3002, function () {
+const server = app.listen(process.env.PORT||3000, function () {
 
     var host = server.address().address
     var port = server.address().port
