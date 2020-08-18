@@ -7,7 +7,7 @@ exports.cfg = {
 
 }
 
-exports.creds ={
-    USER: 'romichsh@outlook.com',
-    PASS: process.env.EMAILPASS
+exports.creds = {
+    USER: 'rkostik@ukr.net',
+    PASS: process.envEMAILCRED
 }
