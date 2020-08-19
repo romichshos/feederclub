@@ -27,7 +27,8 @@ const Header = () => (
                     Рыбачь, учись, соревнуйся
                 </h1>
                 <p className="header_text">
-                    <a className="header_link" href="#">регистрация</a>
+                    <a className="header_link" href="#"  onClick={()=>scroller.scrollTo('LogForm',{spy:true, smooth:true, offset:-350, duration:3000})}
+                    >регистрация</a>
                 </p>
             </div>
             <div className="logo_div">

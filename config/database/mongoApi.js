@@ -10,8 +10,8 @@ exports.createUser =  (username, psw, email) => {
         _id: new mongoose.Types.ObjectId(),
         login: {
             username: username,
-            email: email,
-            psw: psw
+            email: email//,
+           // psw: psw
         }
     })
 
@@ -38,13 +38,13 @@ exports.getUserByID = ((id) => {
 
 exports.updateUserByID = (id, username, psw, email) => {
     User.update({"_id": id},
-        {$set: {"login.$.username": username,"login.$.email": email, "login.$.psw": psw}})
+        {$set: {"login.$.username": username,"login.$.email": email}})
 }
 
 
 exports.updateUser = (id, username, psw, email) => {
     User.update({"login.$email": email},
-        {$set: {"login.$.username": username,"login.$.email": email, "login.$.psw": psw}})
+        {$set: {"login.$.username": username,"login.$.email": email}})
 }
 
 

@@ -3,8 +3,11 @@ import './LogForm.css';
 import '../../svgicons.css';
 import {Element} from 'react-scroll';
 
-const LogForm = ({username, psw, email, isRegisterForm, handleLogInClick}) => {
-    /*let isRegisterForm=1;*/
+const LogForm = ({/*username, psw, email,*/ isRegisterForm, handleLogInClick}) => {
+   // debugger;
+    let username;
+    let psw;
+    let email;
     return (
         <div className="pass_container">
             <Element name='LogForm'/>
@@ -43,7 +46,7 @@ const LogForm = ({username, psw, email, isRegisterForm, handleLogInClick}) => {
                     </div>
                 </div>
                 <button className="signin_button"
-                        onClick={(e)=>{e.preventDefault(); handleLogInClick(username, psw, email={})}}>{(isRegisterForm) ? "РЕГИСТРАЦИЯ" : "ЛОГИН"}</button>
+                        onClick={(e)=>{e.preventDefault(); handleLogInClick(username, psw, email)}}>{(isRegisterForm) ? "РЕГИСТРАЦИЯ" : "ЛОГИН"}</button>
                 <div className='link'><a href='#'>{(isRegisterForm) ? "" : "Забыли пароль?"}</a></div>
                 </form>
             </div>

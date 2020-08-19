@@ -12,7 +12,7 @@ const app = express();
 
 
 ///// EMAIL ////////////////////////
-const transport = {
+/*const transport = {
     host: 'smtp.ukr.net', // Don’t forget to replace with the SMTP host of your provider
     port: 465,
     secure:true,
@@ -65,7 +65,7 @@ router.get('/send', function(req, res) {
     console.log(req.body);
 });
 
-
+*/
 
 app.use(cors())
 app.use(express.json())
@@ -83,18 +83,17 @@ const server = app.listen(process.env.PORT||3002, function () {
 /*const graphqlHTTP = require('express-graphql');*/
 
 
-/*const path = require('path');*/
+const path = require('path');
 //const app = express();
-//app.use(bodyParser.urlencoded({ extended: true }));
-//app.use( bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use( bodyParser.json());
 // connect to Mongo
-//mongoose.connect(cfg.cfg.dbConnect, (err) => {
-//    if (err) return console.log(err)});
-//console.log('connected');
-
-//app.listen(cfg.cfg.serverPort, () => {
- //   console.log(`We are live on  ${cfg.cfg.serverPort}`);
-//});
+mongoose.connect(cfg.cfg.dbConnect, (err) => {
+    if (err) return console.log(err)});
+    console.log('connected');
+    app.listen(cfg.cfg.serverPort, () => {
+    console.log(`We are live on  ${cfg.cfg.serverPort}`);
+});
 
 
 

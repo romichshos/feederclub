@@ -7,9 +7,9 @@ import {useForm} from 'react-hook-form';
 
 const Contacts = () => {
      const {register, handleSubmit, errors, reset } = useForm({defaultValues: {
-              name: "test-user",
-             email: "rkostik@ukr.net",
-              text: "I'm test"}
+              name: "Твое имя",
+             email: "Твой email",
+              text: "Твое сообщение нам"}
      }
  );
      const onSubmit = async (data) => {

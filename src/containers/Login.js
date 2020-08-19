@@ -1,6 +1,6 @@
 import {connect} from 'react-redux';
 import LogForm from '../components/LogForm/LogForm.jsx';
-import {logIn} from '../actions';
+import {logIn, register} from '../actions';
 
 
 const mapStateToProps = (state) => ({
@@ -14,14 +14,23 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
         handleLogInClick(username, psw, email) {
-            if (!username.value.trim() && !psw.value.trim() && !email.value.trim()) {
+            if (!username.value.trim() && !psw.value.trim()) {
                 return
             }
-            dispatch(logIn(username, psw, email));
+            if (email === undefined) {
+            dispatch(logIn(username, psw))
+            }
+            else
+            {
+              dispatch(register(username, psw, email))
+              email.value = '';
+            }
+            ;
             username.value = '';
             psw.value = '';
-            email.value = '';
+
         }
+
     }
 )
 

@@ -3,8 +3,8 @@ import Menu from '../components/NavBar/Navbar.jsx';
 import {logOut, loginClick, registerClick} from '../actions';
 
 const mapStateToProps = (state) => ({
-      username: state.loginForm.username/*,
-      isRegisterForm: state.loginForm.isRegisterForm*/
+      username: state.loginForm.username,
+      isRegisterForm: state.loginForm.isRegisterForm
 })
 
 const mapDispatchToProps = (dispatch) => ({
