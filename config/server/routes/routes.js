@@ -15,7 +15,14 @@ const crudHandler = function(app) {
 
 // CREATE USER
     app.post("/users", (req, res) => {
-      createUser(req.body.username, req.body.email, req.body.psw).then(res.send(data))
+        console.log('equal');
+        console.log(req.body.email);
+        console.log(getUser(req.body.email));
+        if (req.body.email != getUser(req.body.email)) {
+            createUser(req.body.username, req.body.email);
+            res.send(data);
+        }
+        else res.JSON("isPresent: true");
         });
 
 

@@ -1,22 +1,20 @@
 var mongoose = require('mongoose');
-var User = require('./models.js');
-
+const User = require('./models');
 
 /* CREATE */
 
-exports.createUser =  (username, psw, email) => {
-
+exports.createUser =  (username, email, psw) => {
     const user = new User({
         _id: new mongoose.Types.ObjectId(),
         login: {
             username: username,
             email: email//,
-           // psw: psw
+            //psw: psw
         }
     })
 
     user.save(function (err) {
-        if (err) throw err;
+                if (err) throw err;
         console.log(` ----------------------------------------- `);
         console.log(`User - ${username} -  successfully created.`);
         console.log(` ----------------------------------------- `);
@@ -27,7 +25,10 @@ exports.createUser =  (username, psw, email) => {
 /* READ */
 
 exports.getUser = ((email) => {
-    User.findOne(`login.email: ${email}`, (err, user)=> { (err) ? console.log(err) : user});
+    console.log('--------------------------------->>>>>>');
+    const emailParam =   `login.email": ${email}`;
+    User.findOne({emailParam}, (err, user)=> { (err) ? console.log(err) : console.log(user)});
+    console.log('---------------------------------<<<<<<');
 })
 
 exports.getUserByID = ((id) => {

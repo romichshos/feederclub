@@ -1,4 +1,4 @@
-//require('dotenv').load();
+const processEnv= require('dotenv').config();
 const express     = require('express');
 const bodyParser  = require('body-parser');
 const router = express.Router();
@@ -9,7 +9,7 @@ const cfg = require('./config/config.js');
 const crudHandler =require('./config/server/routes/routes');
 const app = express();
 //const creds = require('../../config/config.js');
-
+console.log(processEnv);
 
 ///// EMAIL ////////////////////////
 /*const transport = {
@@ -78,27 +78,20 @@ const server = app.listen(process.env.PORT||3002, function () {
 
 })
 
-///////////////////////////////////////////////
+/////////////////// MONGODB ////////////////////////////
 
 /*const graphqlHTTP = require('express-graphql');*/
+//const path = require('path');
 
-
-const path = require('path');
-//const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use( bodyParser.json());
-// connect to Mongo
-mongoose.connect(cfg.cfg.dbConnect, (err) => {
+////////// connect to Mongo
+ mongoose.connect(cfg.cfg.dbConnect, (err) => {
     if (err) return console.log(err)});
     console.log('connected');
-    app.listen(cfg.cfg.serverPort, () => {
-    console.log(`We are live on  ${cfg.cfg.serverPort}`);
-});
 
-
-
-
-/*crudHandler.createUser('Romich', '', 'romich@gmail.com');*/
+//console.log(typeof crudHandler);
+crudHandler.crudHandler(app);
 
 /*app.use(express.static(path.join(__dirname, 'build')));
 

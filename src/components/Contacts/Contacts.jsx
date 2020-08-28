@@ -6,11 +6,11 @@ import {useForm} from 'react-hook-form';
 
 
 const Contacts = () => {
-     const {register, handleSubmit, errors, reset } = useForm({defaultValues: {
+     const {register, handleSubmit, errors, reset } = useForm(/*{defaultValues: {
               name: "Твое имя",
              email: "Твой email",
               text: "Твое сообщение нам"}
-     }
+     }*/
  );
      const onSubmit = async (data) => {
               console.log(data);
@@ -35,14 +35,14 @@ const Contacts = () => {
                     <form name="callback_form" method="post" onSubmit={handleSubmit(onSubmit)}>
                     <div className="form_input">
                         <p><span className="span_header">Имя <span className="red">*</span></span>
-                            <input ref={register({ required: true })} name="name" type="text"/></p>
+                            <input ref={register({ required: true })} name="name" placeholder='Введите имя' type="text"/></p>
                            {errors.name && 'Введите имя'}
                         <p>Email <span className="red">*</span>
-                            <input ref={register({ required: true })} name="email" type="text"/></p>
+                            <input ref={register({ required: true })} name="email" type="text" placeholder="Введите EMAIL"/></p>
                          {errors.email && 'Введите EMAIL'}
                     </div>
                     <p>Сообщение <span className="red">*</span></p>
-                    <textarea ref={register({ required: true })} name='text'></textarea>
+                    <textarea ref={register({ required: true })} name='text' placeholder='Введите текст'></textarea>
                      {errors.text && 'Введите текст'}
                     <div className="btn_block">
                         <input className="input_btn" type="submit" value="Отправить"/>

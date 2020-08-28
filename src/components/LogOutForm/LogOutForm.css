@@ -1,0 +1,11 @@
+.userForm {
+    text-align: center;
+    font-size: 28px;
+    padding-top: 24px;
+    letter-spacing: 0.5px;
+}
+
+.logo_img {
+    display: block;
+    max-width: 90%;
+}

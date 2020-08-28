@@ -107,4 +107,10 @@ textarea{
         margin-top: 10px;
         font-family: Micra, sans-serif;
     }
+
+    ::placeholder {
+        color: grey;
+        font-size: 0.01em;
+    }
+
 }

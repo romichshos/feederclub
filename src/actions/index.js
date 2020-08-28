@@ -1,29 +1,52 @@
+import axios from 'axios';
 let nextId =0;
 
-export const logIn = (username, psw) => ({
+export const logIn = (user, email, imgUrl, isLogOut) => ({
     type: 'LOGIN',
     //userId: nextId++,
-    username: username.value,
-    psw: psw.value,
-    //email: email.value,
-    isLogged: true
+    user: user,
+   //psw: psw.value,
+    email: email,
+    imgUrl: imgUrl,
+    isLogOut: isLogOut
     //isRegisterForm: isRegisterForm.value
 })
 
-export const logOut =() =>({
+export const logOut =(isLogOut) =>({
     type: 'LOGOUT',
-    userId: null,
-    username: null,
-    psw: null,
+  //  userId: null,
+    user: null,
+  //  psw: null,
     email: null,
-    isLogged: false,
+    imgUrl: null,
+    isLogOut: isLogOut,
     isRegisterForm: false
 })
 
-export const register =(username, psw, email) =>({
+export const register =(user, email)=> {
+    return dispatch => {
+        dispatch(registerInfo());
+        axios
+            .post('//localhost:3002/users', {
+                user: user,
+                email: email//,
+                //completed: false
+                //isPresent: isPresent
+            })
+            .then(res => {
+                dispatch(addUserSuccess(res.data));
+            })
+            .catch(err => {
+                console.log(err.message);
+                dispatch(addUserFailure(err.message));
+            });
+    };
+}
+
+export const registerInfo =(user, psw, email) =>({
     type: 'REGISTER',
     userId: nextId++,
-    username: username,
+    username: user,
     psw: psw,
     email: email,
     isLogged: false
@@ -38,3 +61,14 @@ export const registerClick = ()=>({
     type: 'REGISTER_FORM_CALL',
     isRegisterForm: true
 })
+
+export const addUserSuccess = () => ({
+    type: 'ADD_USER_SUCCESS',
+    isRegistered: true,
+    isRegisterForm: false
+   });
+
+export const addUserFailure = () => ({
+    type: 'ADD_USER_FAILURE',
+    isRegistered: false
+});
