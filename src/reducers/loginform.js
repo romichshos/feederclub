@@ -6,19 +6,15 @@ const loginForm = (state = {}, action) => {
             user:  action.user,
             email:  action.email,
             imgUrl: action.imgUrl,
-           // psw: action.psw,
-            isLoginOut: action.isLoginOut,
-            isRegisterForm: action.isRegisterForm
+            isLogged: action.isLogged
         }
         case 'LOGOUT':
             return {
                 userId: action.userId,
                 user:  action.user,
                 email:  action.email,
-             //   psw: action.userId,
                 imgUrl: action.imgUrl,
-                isLoginOut: action.isLoginOut,
-                isRegisterForm: action.isRegisterForm
+                isLogged: action.isLogged
             }
         case 'LOGIN_FORM_CALL':
         return {

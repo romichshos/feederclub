@@ -60,7 +60,7 @@
 }
 
 .contacts_wrap input{
-    width: 360px;
+    width: 355px;
     height: 40px;
     font-size: 15px;
     margin-bottom: 30px;
@@ -84,7 +84,7 @@
 }
 
 textarea{
-    width: 360px;
+    width: 350px;
     height: 160px;
     margin-top: 10px;
 }
@@ -113,4 +113,12 @@ textarea{
         font-size: 0.01em;
     }
 
+}
+
+.form_input input[type="text"]{
+    padding-left: 5px;
+}
+
+.contacts_wrap textarea{
+    padding: 5px;
 }

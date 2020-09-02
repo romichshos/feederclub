@@ -4,14 +4,10 @@ import './LogOutForm.css';
 import firebase from "../../services/firebase";
 
 const LogOutForm= ({ handleLogOutClick, user, imgUrl}) => {
-    console.log('image');
-    console.log(imgUrl);
-    console.log('USERRRRRRRRRRRRR');
-    console.log(user);
     let  isLoginOut;
     const handleLoginOut = () =>{
         firebase.auth().signOut().then(() => {
-            user = null;
+            console.log('user is logged out');
             }, function (error) {
             console.log(error);
         });
@@ -23,11 +19,12 @@ const LogOutForm= ({ handleLogOutClick, user, imgUrl}) => {
             <div className="userForm">{user}</div>
             <div className="emailForm"></div>
             <div className="avatarForm">
-                <img className='logo_img' src={imgUrl}/>
+                <img className='logo_img round' src={imgUrl}/>
             </div>
         </div>
-        <button className="signin_button" onClick={(e) => {e.preventDefault(); handleLoginOut(); handleLogOutClick(isLoginOut = true);}}>ВЫХОД</button>
-
+        <div className="divButton">
+        <button className="signout_button" onClick={(e) => {e.preventDefault(); handleLoginOut(); handleLogOutClick(isLoginOut = true);}}>ВЫХОД</button>
+        </div>
     </form>
  )
 }

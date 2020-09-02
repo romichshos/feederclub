@@ -1,39 +1,55 @@
 import axios from 'axios';
+import firebase from "../services/firebase";
 let nextId =0;
 
-export const logIn = (user, email, imgUrl, isLogOut) => ({
+export const logIn = (user, email, imgUrl) => ({
     type: 'LOGIN',
-    //userId: nextId++,
     user: user,
-   //psw: psw.value,
     email: email,
     imgUrl: imgUrl,
-    isLogOut: isLogOut
-    //isRegisterForm: isRegisterForm.value
+    isLogged: true
 })
 
-export const logOut =(isLogOut) =>({
+export const logOut =() =>({
     type: 'LOGOUT',
-  //  userId: null,
     user: null,
-  //  psw: null,
     email: null,
     imgUrl: null,
-    isLogOut: isLogOut,
-    isRegisterForm: false
+    isLogged: false
 })
 
-export const register =(user, email)=> {
+export const loginGoogle = (user, email, imgUrl)=>{
+    return dispatch =>{
+        let provider = new firebase.auth.GoogleAuthProvider();
+        firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION).then(function() {
+            return firebase.auth().signInWithPopup(provider).then(function(result) {
+            user = result.user.displayName;
+            email = result.user.email;
+            imgUrl =result.user.photoURL;
+            dispatch(logIn(user, email, imgUrl));
+            dispatch(registerDB(user, email));
+        })}).catch(function(error) {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            const email = error.email;
+            const credential = error.credential;
+        });
+    }
+}
+
+
+export const registerDB =(user, email)=> {
     return dispatch => {
         dispatch(registerInfo());
         axios
             .post('//localhost:3002/users', {
                 user: user,
-                email: email//,
-                //completed: false
-                //isPresent: isPresent
+                email: email
             })
             .then(res => {
+                console.log('RESP');
+                console.log(res);
+                console.log('RESP');
                 dispatch(addUserSuccess(res.data));
             })
             .catch(err => {
@@ -45,11 +61,8 @@ export const register =(user, email)=> {
 
 export const registerInfo =(user, psw, email) =>({
     type: 'REGISTER',
-    userId: nextId++,
-    username: user,
-    psw: psw,
-    email: email,
-    isLogged: false
+    user: user,
+    email: email
 })
 
 export const loginClick = ()=>({

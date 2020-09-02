@@ -3,13 +3,13 @@ const User = require('./models');
 
 /* CREATE */
 
-exports.createUser =  (username, email, psw) => {
+exports.createUser =  (username, email) => {
+    console.log('CREATE');
     const user = new User({
         _id: new mongoose.Types.ObjectId(),
         login: {
             username: username,
-            email: email//,
-            //psw: psw
+            email: email
         }
     })
 
@@ -24,16 +24,25 @@ exports.createUser =  (username, email, psw) => {
 
 /* READ */
 
-exports.getUser = ((email) => {
-    console.log('--------------------------------->>>>>>');
-    const emailParam =   `login.email": ${email}`;
-    User.findOne({emailParam}, (err, user)=> { (err) ? console.log(err) : console.log(user)});
-    console.log('---------------------------------<<<<<<');
-})
+exports.setUser = (username, email, createFunc) => {
+    const getEmailCall = new Promise (function(resolve,reject){ User.findOne({"login.email": email}, (err, user) => {
+        (err) ? reject(err) :  resolve(user);
+    });})
+    getEmailCall.then(function(user){
+        if (user === null) { console.log('something'); createFunc(username, email);}
+     }).catch(function(err) {console.log(err)})
+}
 
-exports.getUserByID = ((id) => {
+exports.getUser = (email, isPresent) => {
+     User.findOne({"login.email": email}, (err, user) => {
+      (err) ? console.log(err) : (!user) ? isPresent(false) : isPresent(true);
+     });
+}
+
+
+exports.getUserByID = (id) => {
     User.findOne({"_id": id}, (err, user)=> { (err) ? console.log(err) : user});
-})
+}
 
 /* UPDATE */
 

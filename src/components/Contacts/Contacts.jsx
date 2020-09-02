@@ -42,7 +42,7 @@ const Contacts = () => {
                          {errors.email && 'Введите EMAIL'}
                     </div>
                     <p>Сообщение <span className="red">*</span></p>
-                    <textarea ref={register({ required: true })} name='text' placeholder='Введите текст'></textarea>
+                    <textarea ref={register({ required: true })} name='text' placeholder='Введите текст' maxLength="40000"></textarea>
                      {errors.text && 'Введите текст'}
                     <div className="btn_block">
                         <input className="input_btn" type="submit" value="Отправить"/>
@@ -52,7 +52,7 @@ const Contacts = () => {
             </div>
             <div className="contacts_content">
                 <div className="contacts_list">
-                    <div className="contacts_type">EMAIL: <span>feederclub@feedershostka.com.ua</span></div>
+                    <div className="contacts_type">EMAIL: <span>feedershostka@yahoo.com</span></div>
                     <div className="contacts_type">АДРЕС: <span>г. Шостка Сумская область</span></div>
                 </div>
                 <div><Element name='Contacts'/></div>

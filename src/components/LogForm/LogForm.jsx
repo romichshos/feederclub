@@ -7,10 +7,6 @@ import LogOutForm from '../LogOutForm/LogOutForm.jsx'
 import LogInForm from '../LogInForm/LogInForm.jsx'
 
 const LogForm = ({user, imgUrl, email, handleLogInClick, handleLogOutClick, isRegisterForm}) => {
-    console.log('main');
-    console.log(user);
-    console.log(email);
-    console.log('main');
      return (
         <div className="pass_container">
             <Element name='LogForm'/>

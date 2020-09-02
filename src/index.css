@@ -72,3 +72,9 @@ body {
     transform: rotate(45deg) translate(20px,20px);
   }
 }
+
+.round {
+  border-radius: 100px; /* Радиус скругления */
+  border: 3px solid #d7e718; /* Параметры рамки */
+  box-shadow: 0 0 17px #655; /* Параметры тени */
+}

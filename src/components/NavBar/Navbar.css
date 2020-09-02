@@ -132,7 +132,7 @@
 .sub_menu li{
     padding: 10px;
     min-height: 20px;
-    mim-width: 110px;
+    min-width: 110px;
     transition: 0.5s;
 }
 

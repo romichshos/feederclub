@@ -8,8 +8,7 @@ const mongoose = require('mongoose');
 const cfg = require('./config/config.js');
 const crudHandler =require('./config/server/routes/routes');
 const app = express();
-//const creds = require('../../config/config.js');
-console.log(processEnv);
+
 
 ///// EMAIL ////////////////////////
 /*const transport = {

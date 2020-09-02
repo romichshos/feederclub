@@ -1,4 +1,4 @@
-const {getUser, createUser, updateUser} = require('../../database/mongoApi.js');
+const {getUser, setUser, createUser, updateUser} = require('../../database/mongoApi.js');
 
 
 const crudHandler = function(app) {
@@ -14,20 +14,15 @@ const crudHandler = function(app) {
 
 
 // CREATE USER
-    app.post("/users", (req, res) => {
-        console.log('equal');
-        console.log(req.body.email);
-        console.log(getUser(req.body.email));
-        if (req.body.email != getUser(req.body.email)) {
-            createUser(req.body.username, req.body.email);
-            res.send(data);
-        }
-        else res.JSON("isPresent: true");
+    app.post('/users', (req, res) => {
+        setUser(req.body.user,req.body.email, createUser);
+        //console.log(data);
+        //res.send(data);
         });
 
 
     app.put('/users', (req, res) => {
-        updateUser(req.body.username, req.body.email)
+        updateUser(req.body.user, req.body.email)
     });
     //app.delete('/users', (req, res) => {});
 }
