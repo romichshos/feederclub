@@ -20,7 +20,14 @@ const composeEnhancers = composeWithDevTools({
     traceLimit: 25,
 })
 
-const store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)));
+const persistedState = sessionStorage.getItem('state') ? JSON.parse(sessionStorage.getItem('state')) : [];
+
+const store = createStore(rootReducer, persistedState, composeEnhancers(applyMiddleware(thunk)));
+
+store.subscribe(() => {
+    sessionStorage.setItem('state', JSON.stringify(store.getState()));
+})
+
 
 render(
     <Provider store={store}>

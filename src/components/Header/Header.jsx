@@ -33,7 +33,7 @@ const Header = () => (
             </div>
             <div className="logo_div">
                     <div className="logo_div_3">
-                        <img className='img_feed' src='/Logo_moving.png' alt=''/>
+                        <img className='img_feed' src='/Logo_moving_v2.png' alt=''/>
                     </div>
            </div>
         </div>

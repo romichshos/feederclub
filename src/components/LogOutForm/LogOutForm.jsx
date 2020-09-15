@@ -23,7 +23,7 @@ const LogOutForm= ({ handleLogOutClick, user, imgUrl}) => {
             </div>
         </div>
         <div className="divButton">
-        <button className="signout_button" onClick={(e) => {e.preventDefault(); handleLoginOut(); handleLogOutClick(isLoginOut = true);}}>ВЫХОД</button>
+        <button className="signout_button" onClick={(e) => {e.preventDefault(); handleLoginOut(); handleLogOutClick();}}>ВЫХОД</button>
         </div>
     </form>
  )

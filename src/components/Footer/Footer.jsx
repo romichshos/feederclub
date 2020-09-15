@@ -14,7 +14,7 @@ const Footer = () => (
                     <Link to="Header" spy={true} smooth={true} offset={-70} duration={3000} className="menu_item footer_item">Главная</Link>
                 </div>
                 <div>
-                    <Link to="MyGallery"spy={true} smooth={true} offset={-70} duration={3000} className="menu_item footer_item">Галерея</Link>
+                    <Link to="MyGallery"spy={true} smooth={true} offset={-300} duration={3000} className="menu_item footer_item">Галерея</Link>
                 </div>
                 <div>
                     <Link to="About" spy={true} smooth={true} offset={-70} duration={3000} className="menu_item footer_item">О нас</Link>
