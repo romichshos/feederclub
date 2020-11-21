@@ -11,7 +11,7 @@ const app = express();
 
 
 ///// EMAIL ////////////////////////
-/*const transport = {
+const transport = {
     host: 'smtp.ukr.net', // Don’t forget to replace with the SMTP host of your provider
     port: 465,
     secure:true,
@@ -64,7 +64,6 @@ router.get('/send', function(req, res) {
     console.log(req.body);
 });
 
-*/
 
 app.use(cors())
 app.use(express.json())

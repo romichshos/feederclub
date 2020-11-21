@@ -30,3 +30,24 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'mazzard';
+    src: url("./fonts/MazzardM-Light.woff"), url("./fonts/MazzardM-Light.woff2") ;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mazzardsoft';
+    src: url("./fonts/MazzardSoftM-Light.woff"), url("./fonts/MazzardSoftM-Light.woff2") ;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nebulosa';
+    src: url("./fonts/nebulosa_display_solid.otf"), url("./fonts/nebulosa_display_stencil.otf") ;
+    font-weight: normal;
+    font-style: normal;
+}

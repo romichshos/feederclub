@@ -58,12 +58,6 @@ const About = () => (
                 </div>
             </div>
         </div>
-        <div className="btn_arrow">
-            <div className="arrow-7" onClick={()=>scroller.scrollTo('Contacts',{spy:true, smooth:true, offset:-70, duration:3000})}>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
     </div>
 )
 

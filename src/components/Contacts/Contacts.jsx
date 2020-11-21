@@ -34,16 +34,16 @@ const Contacts = () => {
                 <div className="contacts_wrap">
                     <form name="callback_form" method="post" onSubmit={handleSubmit(onSubmit)}>
                     <div className="form_input">
-                        <p><span className="span_header">Имя <span className="red">*</span></span>
-                            <input ref={register({ required: true })} name="name" placeholder='Введите имя' type="text"/></p>
-                           {errors.name && 'Введите имя'}
-                        <p>Email <span className="red">*</span>
-                            <input ref={register({ required: true })} name="email" type="text" placeholder="Введите EMAIL"/></p>
-                         {errors.email && 'Введите EMAIL'}
+                        <p><span className="span_header">Имя <span className="red">*</span></span></p>
+                            {errors.name && 'Введите имя'}
+                            <input ref={register({ required: true })} name="name" placeholder='Введите имя' type="text"/>
+                        <p><span className="span_header">Email <span className="red">*</span></span></p>
+                            {errors.email && 'Введите EMAIL'}
+                            <input ref={register({ required: true })} name="email" type="text" placeholder="Введите EMAIL"/>
                     </div>
-                    <p>Сообщение <span className="red">*</span></p>
+                    <p><span className="span_header">Сообщение <span className="red">*</span></span></p>
+                        {errors.text && 'Введите текст'}
                     <textarea ref={register({ required: true })} name='text' placeholder='Введите текст' maxLength="40000"></textarea>
-                     {errors.text && 'Введите текст'}
                     <div className="btn_block">
                         <input className="input_btn" type="submit" value="Отправить"/>
                     </div>

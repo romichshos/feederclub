@@ -1,6 +1,7 @@
 .gallery_container {
     box-sizing: border-box;
     margin-top: 20px;
+    flex-direction: column;
     /*  width: 100%;
       height: 100%;*/
     min-width: 1000px;
@@ -12,10 +13,23 @@
     color: white;
     font-weight: 300;
     font-family: 'Lato', sans-serif;
-    background: url(../../img/bkg_gallery_mosaic.png) center top no-repeat #fff;
+    background: url(../../img/wooden-background.svg) center top no-repeat #fff;
     background-size: cover;
 }
 
+.galleryTitle{
+    height: 50px;
+    width: 500px;
+    padding: 10px;
+    font-size: 35px;
+    text-align: center;
+    font-family: Dialog;
+    font-weight: bold;
+    /*font-style: italic;*/
+    color: #d7e718;
+    color: #d7e718;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
 
 .container {
     padding: 0 15px;

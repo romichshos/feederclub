@@ -16,8 +16,6 @@ const crudHandler = function(app) {
 // CREATE USER
     app.post('/users', (req, res) => {
         setUser(req.body.user,req.body.email, createUser);
-        //console.log(data);
-        //res.send(data);
         });
 
 

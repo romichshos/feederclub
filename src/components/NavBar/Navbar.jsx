@@ -12,11 +12,10 @@ const Menu =({onClickLogOut, onClickRegister, onClickLogIn, user})=> (
                       className="menu_item">Контакты</Link>
             </div>
             <div>
-                <Link to="MyGallery" spy={true} smooth={true} offset={-300} duration={2500} className="menu_item">Галерея</Link>
+                <Link to="MyGallery" spy={true} smooth={true} offset={-170} duration={2500} className="menu_item">Галерея</Link>
             </div>
             <div>
-                <Link to="About" spy={true} smooth={true} offset={-70} duration={2500} className="menu_item">О
-                    нас</Link>
+                <Link to="About" spy={true} smooth={true} offset={-70} duration={2500} className="menu_item">О нас</Link>
             </div>
             <div>
                 <Link to="LogForm" spy={true} smooth={true} offset={-400} duration={2500} className="menu_item"

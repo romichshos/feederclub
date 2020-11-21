@@ -1,16 +1,15 @@
-const loginForm = (state = {}, action) => {
+const data = ["/screens/1.jpg","/screens/2.jpg","/screens/3.jpg","/screens/4.jpg","/screens/5.jpg","/screens/6.jpg"];
+
+const
+    gallery = (state = {dataImg: data}, action) => {
     switch (action.type) {
-        case 'REGISTER':
+        case 'INIT':
             return {
-                userId: action.userId,
-                login:  action.login,
-                email:  action.email,
-                isLogedIn: action.isLogedIn,
-                isRegisterForm: action.isRegisterForm
+              dataImg: null
             }
          default:
             return state
     }
 }
 
-export default loginForm
+export default gallery

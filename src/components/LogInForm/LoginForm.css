@@ -1,4 +1,3 @@
-
 .divButton{
 text-align: center;
 }
@@ -28,13 +27,61 @@ text-align: center;
 }
 
 
+/*
 .btnG:hover {
     background: radial-gradient(circle, #cf4c24, #26c5a3, #2868bb, #f44d0c, #d7e718);
-
 }
 
 .btnG:active {
-    background:  radial-gradient(circle, #d6d518, #1112be, #d6d518, #1012cf, #d7e718);
+    radial-gradient(circle, #d6d518, #1112be, #d6d518, #1012cf, #d7e718);
+}*/
+
+
+.btnG img:hover{border: 2px solid darkblue;}
+
+#customBtn {
+    display: inline-block;
+    background: white;
+    color: #444;
+    width: 190px;
+    border-radius: 5px;
+    border: thin solid #888;
+    box-shadow: 1px 1px 1px grey;
+    white-space: nowrap;
 }
 
-.btnG img:hover{border: 2px solid blue;}
+#customBtn {
+    display: inline-block;
+    background: white;
+    color: #444;
+    width: 190px;
+    border-radius: 5px;
+    border: thin solid #888;
+    box-shadow: 1px 1px 1px grey;
+    white-space: nowrap;
+}
+#customBtn:hover {
+    cursor: pointer;
+}
+span.label {
+    font-family: serif;
+    font-weight: normal;
+}
+span.icon {
+    background: url(../../img/14Google_png.png) transparent 5px 50% no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    width: 42px;
+    height: 42px;
+    }
+span.buttonText {
+    display: inline-block;
+    vertical-align: middle;
+   /*padding-left: 42px;
+    padding-right: 42px;*/
+
+    font-size: 14px;
+    font-weight: bold;
+    /* Use the Roboto font that is loaded in the <head> */
+    font-family: 'Roboto', sans-serif;
+}

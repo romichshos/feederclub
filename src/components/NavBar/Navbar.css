@@ -14,7 +14,7 @@
 }
 
 .menu_item {
-    font-family: simpler, Arial, sans-serif;
+    font-family: mazzardsoft, Arial, sans-serif;
     font-size: 12px;
     line-height: 30px;
     color: #0a1947;
@@ -24,12 +24,12 @@
     margin-left: 65px;
     transition: 0.5s;
     display: block;
+    font-weight: bolder;
 }
 
 .menu_item.menu_item_login{
     color:#ff0057;
     text-decoration: none;
-    font-family: Euphemia;
     letter-spacing: 3px;
     font-size: 10px;
 
@@ -137,7 +137,7 @@
 }
 
 .sub_menu li a{
-    font-family: Euphemia, sans-serif;
+    font-family: mazzardsoft, sans-serif;
     text-decoration: none;
     font-size: 13px;
     font-weight: 600;

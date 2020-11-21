@@ -36,11 +36,12 @@
 }
 
 .main_title {
-    font-family: tauern, Arial, sans-serif;
-    font-size: 125px;
-    color: #0d2861;
+    font-family: mazzardsoft, Arial, sans-serif;
+    font-size: 75px;
+    color: #373d51;
     text-align: center;
-    letter-spacing: 20px;
+    font-weight: bold;
+    letter-spacing: 10px;
 }
 
 .arrow_img {
