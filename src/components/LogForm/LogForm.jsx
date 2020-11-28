@@ -11,8 +11,8 @@ const LogForm = ({user, imgUrl, email, handleLogInClick, handleLogOutClick, isRe
         <div className="pass_container">
             <Element name='LogForm'/>
             <div className="login_div">
-                <div className="logo_form"><img className="logo_img_1" src="/fishing-2.png" alt=""/></div>
-                <div className="title">ШФК</div>
+                <div className="logo_form"><img className="logo_img_1" src="/logo-3.png" alt=""/></div>
+                <div className="title"></div>
                 {!user&&<LogInForm isRegisterForm={isRegisterForm} handleLogInClick={handleLogInClick}/>}
                 {user&&<LogOutForm handleLogOutClick={handleLogOutClick} user={user} imgUrl={imgUrl}/>}
             </div>

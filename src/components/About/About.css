@@ -1,9 +1,10 @@
 @import url(../../fonts.css);
 
 .wrap_about{
-    background: url(../../img/about_background.jpg) center top no-repeat #fff;
+    /*background: url(../../img/about_background.jpg) center top no-repeat #fff;*/
+    background: #a1cbdd center top no-repeat;
     background-size: cover;
-    margin-top: 20px;
+    margin-top: 1px;
 }
 
 .content {
@@ -12,7 +13,7 @@
     align-items: center;
     padding:0;
     min-height: 100vh;
-    font-family: Consolas;
+    font-family: mazzardsoft;
 }
 
 .container_card {
@@ -43,7 +44,7 @@
 }
 
 .container_card .card:hover .face.face1 {
-        background: #ff0057;
+        background: #afafb3;
         transform: translateY(0);
 }
 

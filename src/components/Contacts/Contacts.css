@@ -1,8 +1,9 @@
 .contacts_container {
-    background: url(../../img/background_contacts.png) center top no-repeat #fff;
+    /*background: url(../../img/background_contacts.png) center top no-repeat #fff;*/
+    background: #a1cbdd center top no-repeat;
     background-size: cover;
     display: grid;
-    margin-top: 20px;
+    margin-top: 1px;
     grid-template-rows: 650px 150px 100px;
     min-height: 100vh;
 }
@@ -18,7 +19,7 @@
 }
 
 .contacts_text {
-    font-family: Micra, sans-serif;
+    font-family: mazzardsoft, sans-serif;
     font-size: 50px;
     color: #fff;
     font-weight: bold;
@@ -29,11 +30,12 @@
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    background: white;
+    /*background: white;*/
+    background: #a1cbdd center top no-repeat;
 }
 
 .contacts_type {
-    font-family: Micra, sans-serif;
+    font-family: mazzardsoft, sans-serif;
     font-size: 20px;
     font-weight: bold;
     /*border-bottom: 1px solid #0c002b;*/
@@ -45,12 +47,13 @@
     justify-content: space-between;
     flex-basis: 800px;
     margin: 35px;
-     border-bottom: 1px solid #0c002b;
-    border-top: 1px solid #0c002b;
+    color: #fff;
+    /*border-bottom: 1px solid #0c002b;
+    border-top: 1px solid #0c002b;*/
 }
 
 .contacts_list div span {
-    font-family: Euphemia, sans-serif;
+    font-family: mazzardsoft, sans-serif;
     font-size: 20px;
     font-weight: normal;
     /*border-bottom: 1px solid #0c002b;*/
@@ -59,7 +62,7 @@
 .contacts_wrap{
     width: 400px;
     color: #fff;
-    font-family: Micra, sans-serif;
+    font-family: mazzardsoft, sans-serif;
     font-size: 15px;
 }
 
@@ -69,7 +72,7 @@
     font-size: 15px;
     margin-bottom: 30px;
     margin-top: 10px;
-    font-family: Micra, sans-serif;
+    font-family: mazzardsoft, sans-serif;
 }
 
 .input_btn{
@@ -109,7 +112,7 @@ textarea{
         font-size: calc(15px/2);
         margin-bottom: 30px;
         margin-top: 10px;
-        font-family: Micra, sans-serif;
+        font-family: mazzardsoft, sans-serif;
     }
 
     ::placeholder {

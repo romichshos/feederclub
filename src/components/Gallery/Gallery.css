@@ -13,7 +13,7 @@
     color: white;
     font-weight: 300;
     font-family: 'Lato', sans-serif;
-    background: url(../../img/wooden-background.svg) center top no-repeat #fff;
+    /*background: url(../../img/wooden-background.svg) center top no-repeat #fff;*/
     background-size: cover;
 }
 
@@ -23,7 +23,7 @@
     padding: 10px;
     font-size: 35px;
     text-align: center;
-    font-family: Dialog;
+    font-family: mazzardsoft;
     font-weight: bold;
     /*font-style: italic;*/
     color: #d7e718;

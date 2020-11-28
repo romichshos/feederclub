@@ -1,11 +1,11 @@
 
 footer {
     /*display: flex;*/
-    background: #0c002b;
+    bbackground: #a1cbdd center top no-repeat;
     /*border: 2px solid !*#24cfaa*! #1012cf;*/
     /*justify-content: space-between;*/
     /*align-items: center;*/
-    font-family: Euphemia, sans-serif;
+    font-family: mazzardsoft, sans-serif;
 
 }
 
@@ -14,7 +14,7 @@ footer {
     font-size: 9px;
     letter-spacing: 4px;
     text-decoration: none;
-    font-family: Euphemia, sans-serif ;
+    font-family: mazzardsoft, sans-serif ;
 }
 
 .footer_wrap{
@@ -31,7 +31,7 @@ footer {
 }
 
 .footer_li {
-    font-family: Euphemia, sans-serif;
+    font-family: mazzardsoft, sans-serif;
     font-size: 9px;
     line-height: 30px;
     letter-spacing: 4px;
