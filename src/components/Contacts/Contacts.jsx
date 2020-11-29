@@ -26,9 +26,9 @@ const Contacts = () => {
 
     return   (
         <div className="contacts_container">
+            <div className="div_header"></div>
             <div className="contacts_header">
                 <div className="contacts_div">
-
                     <div className="contacts_text">НАПИШИТЕ НАМ</div>
                 </div>
                 <div className="contacts_wrap">
@@ -49,11 +49,6 @@ const Contacts = () => {
                     </div>
                  </form>
                 </div>
-            </div>
-            <div className="contacts_content">
-                <div className="contacts_list">
-                </div>
-                <div><Element name='Contacts'/></div>
             </div>
             <Footer/>
         </div>

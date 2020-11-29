@@ -1,7 +1,7 @@
 .gallery_container {
     box-sizing: border-box;
-    margin-top: 20px;
-    flex-direction: column;
+    margin-top: 2px;
+    flex-direction: row;
     /*  width: 100%;
       height: 100%;*/
     min-width: 1000px;
@@ -14,7 +14,14 @@
     font-weight: 300;
     font-family: 'Lato', sans-serif;
     /*background: url(../../img/wooden-background.svg) center top no-repeat #fff;*/
+    background: #eeede7 center top no-repeat;
     background-size: cover;
+}
+
+.galleryText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .galleryTitle{
@@ -22,13 +29,20 @@
     width: 500px;
     padding: 10px;
     font-size: 35px;
+    letter-spacing: 5px;
     text-align: center;
-    font-family: mazzardsoft;
-    font-weight: bold;
-    /*font-style: italic;*/
-    color: #d7e718;
-    color: #d7e718;
-    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    font-family: mazzardsoft, sans-serif;
+    color: #0f1951;
+}
+
+.galleryDesc{
+    height: 50px;
+    width: 500px;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    font-family: mazzardsoft, sans-serif;
+    color: #0f1951;
 }
 
 .container {

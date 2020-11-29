@@ -18,7 +18,7 @@ const composeEnhancers = composeWithDevTools({
     traceLimit: 25,
 })
 
-const data = ["/screens/1.jpg","/screens/2.jpg","/screens/3.jpg","/screens/4.jpg","/screens/5.jpg","/screens/6.jpg"];
+const data = ["/screens/1.jpg"];
 
 const persistedState = sessionStorage.getItem('state') ? JSON.parse(sessionStorage.getItem('state')) : [];
 

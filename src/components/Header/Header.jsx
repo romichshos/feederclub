@@ -12,7 +12,7 @@ const Header = () => (
             <div className="header_top">
                 <div className="header_logo logo">
                     <a className="logo_link" href='#'>
-                        <img className='logo_img' src='/logo-3.png' alt='Логотип'/>
+                        <img className='logo_img' src='/logo-4.png' alt='Логотип'/>
                     </a>
                 </div>
                 <div className="header_title">
@@ -21,14 +21,11 @@ const Header = () => (
             </div>
             <div className="header_info">
                 <h1 className="main_title">
-                    КЛУБ ЛЮБИТЕЛЕЙ ФИДЕРНОЙ ЛОВЛИ
+                    КЛУБ ЛЮБИТЕЛЕЙ</h1>
+                <h1 className="main_title">
+                    ФИДЕРНОЙ ЛОВЛИ
                 </h1>
             </div>
-            <div className="logo_div">
-                    <div className="logo_div_3">
-                        <img className='img_feed' src='/Logo_moving_v2.png' alt=''/>
-                    </div>
-           </div>
         </div>
     </header>
 )

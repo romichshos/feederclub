@@ -6,11 +6,11 @@ footer {
     /*justify-content: space-between;*/
     /*align-items: center;*/
     font-family: mazzardsoft, sans-serif;
-
+    flex: 0 0 auto;
 }
 
 .footer_item {
-    color: #fff;
+    color: #0f1951;;
     font-size: 9px;
     letter-spacing: 4px;
     text-decoration: none;
@@ -35,7 +35,7 @@ footer {
     font-size: 9px;
     line-height: 30px;
     letter-spacing: 4px;
-    color: #fff;
+    color: #0f1951;
     font-weight: 600;
     margin-left: 65px;
     transition: 0.5s;
@@ -68,3 +68,4 @@ footer {
     width: 2em;
     height: 2em;
 }
+

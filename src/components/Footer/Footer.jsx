@@ -26,6 +26,7 @@ const Footer = () => (
                     <Link to="/" className="menu_item footer_item"> </Link>
                 </div>
             </nav>
+
             <ul className="footer_socials socials">
                 <li className="social_item">
                     <a aria-label="Instagram" className="social_link" href="#">

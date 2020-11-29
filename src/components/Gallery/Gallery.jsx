@@ -5,18 +5,18 @@ import 'swiper/swiper-bundle.css';
 import Swiper from "../Slider/Swiper.jsx";
 
 const MyGallery = ({user, dataImg}) => {
-    if (user) {
-        return (
+         return (
             <div className="gallery_container">
-            <div className="galleryTitle" >НАША ГАЛЛЕРЕЯ</div>
-                <Element name='MyGallery'/>
-                 <Swiper urlArray={dataImg}/>
+                <div className="galleryText">
+                    <div className="galleryTitle">НАША ГАЛЛЕРЕЯ</div>
+                    <div className="galleryDesc">фото и видео с наших рыбалок</div>
+                </div>
+                <div className="swiper_div">
+                    <Element name='MyGallery'/>
+                    <Swiper urlArray={dataImg}/>
+                </div>
             </div>
-
         )
-    }
-    else
-        return (<div></div>)
 }
 
 export default MyGallery

@@ -14,8 +14,8 @@
     color: white;
     font-weight: 300;
     font-family: mazzardsoft, sans-serif;
-    /*background: url(../../img/background_logform.jpg) center top no-repeat #fff;*/
-    background: #eeede7 center top no-repeat;
+    background: url(../../img/background_logform.jpg) center top no-repeat #fff;
+    /*background: #eeede7 center top no-repeat;*/
     background-size: cover;
 }
 
