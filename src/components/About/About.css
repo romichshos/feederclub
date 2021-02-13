@@ -16,6 +16,8 @@
     min-height: 100vh;
     font-family: mazzardsoft;
     flex-direction: column;
+    min-width: 1000px;
+    min-height: 800px;
 }
 
 .container_card {

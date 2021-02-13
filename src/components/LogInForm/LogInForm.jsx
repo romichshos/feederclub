@@ -38,7 +38,7 @@ const LogInForm = ({isRegisterForm, handleLogInClick}) => {
         </div>
         <div className="divButton">
          <button className="signin_button btn-disable" onClick={(e)=>{e.preventDefault(); handleLogInClick(user, email, imgUrl, isLogOut=false); }} >{(isRegisterForm) ? "РЕГИСТРАЦИЯ" : "ЛОГИН"}</button>
-         <img className="btnG" src ='/btn_google_signin_light_normal_web.png' onClick={(e)=>{e.preventDefault(); handleLogInClick(user, email, imgUrl, isLogOut=false); }}></img>
+            {/*<img className="btnG" src ='/btn_google_signin_light_normal_web.png'  onClick={(e)=>{e.preventDefault(); handleLogInClick(user, email, imgUrl, isLogOut=false); }}></img>*/}
         </div>
         { /*<div id="gSignInWrapper">
               <div id="customBtn" className="customGPlusSignIn" onClick={(e)=>{e.preventDefault(); handleLogInClick(user, email, imgUrl, isLogOut=false); }} >

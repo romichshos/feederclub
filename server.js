@@ -33,12 +33,12 @@ transporter.verify((error, success) => {
 });
 
 router.post('/send', (req, res, next) => {
-    var name = req.body.name
-    var email = req.body.email;
-    var message = req.body.text
-    var content = `name: ${name} \n email: ${email} \n message: ${message} `
+    const name = req.body.name
+    const email = req.body.email;
+    const message = req.body.text
+    const content = `name: ${name} \n email: ${email} \n message: ${message} `
 
-    var mail = {
+    const mail = {
         from: 'rkostik@ukr.net',//email,
         to: 'romichsh@outlook.com',  // Change to email address that you want to receive messages on
         subject: 'New Message from Contact Form',

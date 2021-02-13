@@ -10,13 +10,17 @@ const LogForm = ({user, imgUrl, email, handleLogInClick, handleLogOutClick, isRe
      return (
         <div className="pass_container">
             <Element name='LogForm'/>
-            <div className="login_div">
+            <div className="login_div flex_item">
                 <div className="logo_form"><img className="logo_img_1" src="/logo-4.png" alt=""/></div>
                 <div className="title"></div>
                 {!user&&<LogInForm isRegisterForm={isRegisterForm} handleLogInClick={handleLogInClick}/>}
                 {user&&<LogOutForm handleLogOutClick={handleLogOutClick} user={user} imgUrl={imgUrl}/>}
             </div>
+            <div className="pass_description flex_item">
+                <div className="logFormTitle">ПРИСОЕДИНЯЙСЯ</div>
+            </div>
         </div>
+
     )
 }
 
