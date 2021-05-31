@@ -13,13 +13,12 @@
     color: white;
     font-weight: 300;
     font-family: mazzardsoft, sans-serif;
-    background: url(../../img/background_logform.jpg) center top no-repeat #fff;
+    background: url(../../img/background_logform.webp) center top no-repeat #fff;
     /*background: #eeede7 center top no-repeat;*/
     background-size: cover;
 }
 
 .login_div {
-    opacity: 65%;
     filter:blur(0.4px);
     width: 277px;
     height: 550px;
@@ -43,6 +42,7 @@
         /*left  inset*/
     inset -20px 0px 60px rgba(0, 0, 0, 0.1)
 ;
+    /*opacity: 67%;*/
 }
 
 .logo_form {
@@ -60,11 +60,6 @@
     height: 90%;
     object-fit: contain;
 }
-
-/*.div_img_2{
-     align-content: center;
-     margin: 0 auto;
- }*/
 
 .title {
     text-align: center;
@@ -102,12 +97,6 @@
     margin-bottom: 30px;
 }
 
-/*::placeholder{
-    color:white;
-    opacity:1;
-    font-size:20px;
-    font-weight: 300;
-}*/
 
 .signin_button {
     outline: none;
@@ -153,7 +142,6 @@
 
     /*Button disabled - CSS color class*/
     color: #c0c0c0;
-    /*background-color: #ffffff;*/
     background: #9e9fa6;
 }
 
@@ -171,5 +159,5 @@
     text-align: center;
     font-family: mazzardsoft, sans-serif;
     color: #f8f8f8;
-    opacity: 65%;
+    /*opacity: 67%;*/
 }

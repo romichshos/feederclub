@@ -1,9 +1,9 @@
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 const User = require('./models');
 
 /* CREATE */
 
-exports.createUser =  (username, email) => {
+exports.createUser = (username, email) => {
     console.log('CREATE');
     const user = new User({
         _id: new mongoose.Types.ObjectId(),
@@ -14,7 +14,7 @@ exports.createUser =  (username, email) => {
     })
 
     user.save(function (err) {
-                if (err) throw err;
+        if (err) throw err;
         console.log(` ----------------------------------------- `);
         console.log(`User - ${username} -  successfully created.`);
         console.log(` ----------------------------------------- `);
@@ -25,36 +25,45 @@ exports.createUser =  (username, email) => {
 /* READ */
 
 exports.setUser = (username, email, createFunc) => {
-    const getEmailCall = new Promise (function(resolve,reject){ User.findOne({"login.email": email}, (err, user) => {
-        (err) ? reject(err) :  resolve(user);
-    });})
-    getEmailCall.then(function(user){
-        if (user === null) { console.log('something'); createFunc(username, email);}
-     }).catch(function(err) {console.log(err)})
+    const getEmailCall = new Promise(function (resolve, reject) {
+        User.findOne({"login.email": email}, (err, user) => {
+            (err) ? reject(err) : resolve(user);
+        });
+    })
+    getEmailCall.then(function (user) {
+        if (user === null) {
+            console.log('something');
+            createFunc(username, email);
+        }
+    }).catch(function (err) {
+        console.log(err)
+    })
 }
 
 exports.getUser = (email, isPresent) => {
-     User.findOne({"login.email": email}, (err, user) => {
-      (err) ? console.log(err) : (!user) ? isPresent(false) : isPresent(true);
-     });
+    User.findOne({"login.email": email}, (err, user) => {
+        (err) ? console.log(err) : (!user) ? isPresent(false) : isPresent(true);
+    });
 }
 
 
 exports.getUserByID = (id) => {
-    User.findOne({"_id": id}, (err, user)=> { (err) ? console.log(err) : user});
+    User.findOne({"_id": id}, (err, user) => {
+        (err) ? console.log(err) : user
+    });
 }
 
 /* UPDATE */
 
 exports.updateUserByID = (id, username, psw, email) => {
     User.update({"_id": id},
-        {$set: {"login.$.username": username,"login.$.email": email}})
+        {$set: {"login.$.username": username, "login.$.email": email}})
 }
 
 
 exports.updateUser = (id, username, psw, email) => {
     User.update({"login.$email": email},
-        {$set: {"login.$.username": username,"login.$.email": email}})
+        {$set: {"login.$.username": username, "login.$.email": email}})
 }
 
 

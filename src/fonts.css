@@ -1,53 +1,53 @@
 @font-face {
     font-family: 'Lato';
-    src: url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+    src: local('Pacifico Regular'), url('https://fonts.googleapis.com/css?family=Lato&display=swap');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'aksent';
-    src: url("./fonts/Aksent.woff"), url("./fonts/Aksent.woff2") ;
+    src: local('Pacifico Regular'), url("./fonts/Aksent.woff"), url("./fonts/Aksent.woff2") ;
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'pgr';
-    src: url("./fonts/PGR.woff"), url("./fonts/PGR.woff2") ;
+    src: local('Pacifico Regular'), url("./fonts/PGR.woff"), url("./fonts/PGR.woff2") ;
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'simpler';
-    src: url("./fonts/SIMPLER.woff"), url("./fonts/SIMPLER.woff2") ;
+    src: local('Pacifico Regular'), url("./fonts/SIMPLER.woff"), url("./fonts/SIMPLER.woff2") ;
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'tauern';
-    src: url("./fonts/TauernCTTRegular.woff"), url("./fonts/TauernCTTRegular.woff2") ;
+    src: local('Pacifico Regular'), url("./fonts/TauernCTTRegular.woff"), url("./fonts/TauernCTTRegular.woff2") ;
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'mazzard';
-    src: url("./fonts/MazzardM-Light.woff"), url("./fonts/MazzardM-Light.woff2") ;
+    src: local('Pacifico Regular'), url("./fonts/MazzardM-Light.woff"), url("./fonts/MazzardM-Light.woff2") ;
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'mazzardsoft';
-    src: url("./fonts/MazzardSoftM-Light.woff"), url("./fonts/MazzardSoftM-Light.woff2") ;
+    src: local('Pacifico Regular'), url("./fonts/MazzardSoftM-Light.woff"), url("./fonts/MazzardSoftM-Light.woff2") ;
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'nebulosa';
-    src: url("./fonts/nebulosa_display_solid.otf"), url("./fonts/nebulosa_display_stencil.otf") ;
+    src: local('Pacifico Regular'), url("./fonts/nebulosa_display_solid.otf"), url("./fonts/nebulosa_display_stencil.otf") ;
     font-weight: normal;
     font-style: normal;
 }

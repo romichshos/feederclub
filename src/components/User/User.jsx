@@ -12,6 +12,5 @@ return <Link to="" spy={true} smooth={true} offset={-400} duration={2500} classN
 </Link>;
 }
 
-)
 
 export default User

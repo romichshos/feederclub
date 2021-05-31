@@ -1,7 +1,7 @@
 
 footer {
     /*display: flex;*/
-    bbackground: #a1cbdd center top no-repeat;
+    /*background: #0f1951 center top no-repeat;*/
     /*border: 2px solid !*#24cfaa*! #1012cf;*/
     /*justify-content: space-between;*/
     /*align-items: center;*/
@@ -10,7 +10,7 @@ footer {
 }
 
 .footer_item {
-    color: #0f1951;;
+    color: #dadbe2;
     font-size: 9px;
     letter-spacing: 4px;
     text-decoration: none;
@@ -35,7 +35,7 @@ footer {
     font-size: 9px;
     line-height: 30px;
     letter-spacing: 4px;
-    color: #0f1951;
+    color: #dadbe2;
     font-weight: 600;
     margin-left: 65px;
     transition: 0.5s;

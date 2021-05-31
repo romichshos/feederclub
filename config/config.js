@@ -9,5 +9,5 @@ exports.cfg = {
 
 exports.creds = {
     USER: 'rkostik@ukr.net',
-    PASS: process.env.EMAILCRD
+    PASS: process.env.EMAILCRD2
 }

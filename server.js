@@ -28,7 +28,7 @@ transporter.verify((error, success) => {
     if (error) {
         console.log(error);
     } else {
-        console.log('Server is ready to take messages');
+        console.log('Server is ready to take messages'+success);
     }
 });
 
@@ -39,7 +39,7 @@ router.post('/send', (req, res, next) => {
     const content = `name: ${name} \n email: ${email} \n message: ${message} `
 
     const mail = {
-        from: 'rkostik@ukr.net',//email,
+        from: cfg.creds.USER,
         to: 'romichsh@outlook.com',  // Change to email address that you want to receive messages on
         subject: 'New Message from Contact Form',
         text: content
@@ -68,10 +68,11 @@ router.get('/send', function(req, res) {
 app.use(cors())
 app.use(express.json())
 app.use('/', router)
+
 const server = app.listen(process.env.PORT||3002, function () {
 
-    var host = server.address().address
-    var port = server.address().port
+    const host = server.address().address
+    const port = server.address().port
     console.log("Example app listening at http://%s:%s", host, port)
 
 })

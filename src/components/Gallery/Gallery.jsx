@@ -1,8 +1,8 @@
 import React from 'react';
 import {Element} from 'react-scroll';
 import './Gallery.css';
-import 'swiper/swiper-bundle.css';
 import Swiper from "../Slider/Swiper.jsx";
+import 'swiper/swiper-bundle.css';
 
 const MyGallery = ({user, dataImg}) => {
          return (

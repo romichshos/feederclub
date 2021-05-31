@@ -2,7 +2,7 @@
 @import url(../../index.css);
 
 .header {
-    background: url(../../img/main_bgr.jpg) center top no-repeat #fff;
+    background: url(../../img/main_bgr.webp) center top no-repeat #fff;
     background-size: cover;
     min-width: 1000px;
     min-height: 800px;

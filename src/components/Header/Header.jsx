@@ -12,7 +12,7 @@ const Header = () => (
             <div className="header_top">
                 <div className="header_logo logo">
                     <a className="logo_link" href='#'>
-                        <img className='logo_img' src='/logo-4.png' alt='Логотип'/>
+                        <img className='logo_img' src='/logo-4.webp' alt='Логотип'/>
                     </a>
                 </div>
                 <div className="header_title">
