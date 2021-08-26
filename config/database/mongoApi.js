@@ -56,13 +56,13 @@ exports.getUserByID = (id) => {
 /* UPDATE */
 
 exports.updateUserByID = (id, username, psw, email) => {
-    User.update({"_id": id},
+    User.updateOne({"_id": id},
         {$set: {"login.$.username": username, "login.$.email": email}})
 }
 
 
 exports.updateUser = (id, username, psw, email) => {
-    User.update({"login.$email": email},
+    User.updateMany({"login.$email": email},
         {$set: {"login.$.username": username, "login.$.email": email}})
 }
 

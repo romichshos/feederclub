@@ -16,6 +16,7 @@
     "firebase": "^7.19.1",
     "firebase-admin": "^8.13.0",
     "graphql": "^14.7.0",
+    "graphql-date": "^1.0.3",
     "immutable": "^3.8.2",
     "lint": "^0.7.0",
     "mongodb": "^3.6.1",
@@ -69,6 +70,7 @@
   },
   "devDependencies": {
     "nodemon": "^1.19.4",
+    "react-dev-utils": "^8.0.0",
     "redux-devtools": "^3.7.0",
     "redux-devtools-extension": "^2.13.8"
   }

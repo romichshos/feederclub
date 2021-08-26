@@ -1,20 +1,24 @@
-const processEnv= require('dotenv').config();
-const express     = require('express');
-const bodyParser  = require('body-parser');
+const processEnv = require('dotenv').config();
+const express = require('express');
+const schema = require('./api/graphql/schemas');
+const ExpressGraphQL = require('express-graphql');
+const bodyParser = require('body-parser');
 const router = express.Router();
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const cfg = require('./config/config.js');
-const crudHandler =require('./config/server/routes/routes');
+const crudHandler = require('./config/server/routes/routes');
 const app = express();
 
 
+
+
 ///// EMAIL ////////////////////////
-const transport = {
+/*const transport = {
     host: 'smtp.ukr.net', // Don’t forget to replace with the SMTP host of your provider
     port: 465,
-    secure:true,
+    secure: true,
     tls: {rejectUnauthorized: false},
     auth: {
         user: cfg.creds.USER,
@@ -28,7 +32,7 @@ transporter.verify((error, success) => {
     if (error) {
         console.log(error);
     } else {
-        console.log('Server is ready to take messages'+success);
+        console.log('Server is ready to take messages' + success);
     }
 });
 
@@ -60,44 +64,37 @@ router.post('/send', (req, res, next) => {
     })
 })
 
-router.get('/send', function(req, res) {
+router.get('/send', function (req, res) {
     console.log(req.body);
 });
+*/
+/////////////////////////////////////////
 
+//app.use(cors())
+//app.use(express.json())
+///////////////////////////  GraphQL //////////////////////
+app.use("/graphql", ExpressGraphQL({
+    schema: schema,
+    graphiql: true
+}))
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
 
-app.use(cors())
-app.use(express.json())
-app.use('/', router)
-
-const server = app.listen(process.env.PORT||3002, function () {
+const server = app.listen(process.env.PORT || 3002, () => {
 
     const host = server.address().address
     const port = server.address().port
-    console.log("Example app listening at http://%s:%s", host, port)
+    console.log("app listening at https://%s:%s", host, port)
 
 })
 
 /////////////////// MONGODB ////////////////////////////
 
-/*const graphqlHTTP = require('express-graphql');*/
-//const path = require('path');
+////////// connect to MongoDB
+mongoose.connect(cfg.cfg.dbConnect, (err) => {
+    if (err) return console.log(err)
+});
+console.log('connected');
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use( bodyParser.json());
-////////// connect to Mongo
- mongoose.connect(cfg.cfg.dbConnect, (err) => {
-    if (err) return console.log(err)});
-    console.log('connected');
-
-//console.log(typeof crudHandler);
-crudHandler.crudHandler(app);
-
-/*app.use(express.static(path.join(__dirname, 'build')));
-
-app.get('/ping', function (req, res) {
-    return res.send('pong');
-});*/
-
-/*app.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});*/
+// MongoDB logic
+//crudHandler.crudHandler(app);
